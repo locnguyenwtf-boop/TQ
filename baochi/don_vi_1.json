@@ -2,27 +2,27 @@
   "section": "第一单元 对话合作 / Don vi 1: Hop tac doi thoai",
   "questions": [
     {
-      "question": "【新闻速递】金砖国家第九次会晤在哪个城市举行？\n/ Hoi nghi BRICS lan thu 9 duoc to chuc tai thanh pho nao?",
+      "question": "【新闻速递】原文填空：\n'深化金砖伙伴关系，开辟更加光明未来'，是本次厦门会晤的________。",
       "options": [
-        "A. 北京 / Bac Kinh",
-        "B. 厦门 / Ha Mon",
-        "C. 上海 / Thuong Hai",
-        "D. 广州 / Quang Chau"
+        "A. 主题 / chu de",
+        "B. 目标 / muc tieu",
+        "C. 口号 / khau hieu",
+        "D. 宗旨 / tong chi"
       ],
-      "answer": "B. 厦门 / Ha Mon"
+      "answer": "A. 主题 / chu de"
     },
     {
-      "question": "【新闻速递】本次金砖峰会的主题是________。\n/ Chu de cua Hoi nghi BRICS lan nay la ________.",
+      "question": "【新闻速递】原文填空：\n今年的金标图案不仅与会晤主题________，也同时体现了举办地厦门的海洋文化特色。",
       "options": [
-        "A. 深化金砖伙伴关系，开辟更加光明未来 / Tang cuong quan he doi tac BRICS, mo ra tuong lai tuoi sang hon",
-        "B. 共建繁荣世界，开创美好未来 / Cung xay dung the gioi thinh vuong",
-        "C. 推动全球治理，维护世界和平 / Thuc day quan tri toan cau, duy tri hoa binh the gioi",
-        "D. 加强南南合作，促进共同发展 / Tang cuong hop tac Nam-Nam, thuc day phat trien chung"
+        "A. 相呼应 / phu hop voi nhau",
+        "B. 相矛盾 / mau thuan",
+        "C. 相背离 / di nguoc",
+        "D. 无关联 / khong lien quan"
       ],
-      "answer": "A. 深化金砖伙伴关系，开辟更加光明未来 / Tang cuong quan he doi tac BRICS, mo ra tuong lai tuoi sang hon"
+      "answer": "A. 相呼应 / phu hop voi nhau"
     },
     {
-      "question": "【新闻速递】奥尼尔预测，金砖国家经济规模将在________年前超过G7。\n/ ONeill du doan quy mo kinh te cac nuoc BRICS se vuot G7 truoc nam ________.",
+      "question": "【新闻速递】原文填空：\n奥尼尔写道：'如果中国经济保持强劲势头，金砖国家________年前会超过G7。'",
       "options": [
         "A. 2025",
         "B. 2030",
@@ -32,7 +32,7 @@
       "answer": "C. 2035"
     },
     {
-      "question": "【新闻速递】金砖国家占全球总GDP的________。\n/ Cac nuoc BRICS chiem ________ tong GDP toan cau.",
+      "question": "【新闻速递】原文填空：\n购买力平价计算，金砖国家占全球总GDP的________，为全球经济增长贡献率已超过50%。",
       "options": [
         "A. 20%",
         "B. 25%",
@@ -42,84 +42,144 @@
       "answer": "C. 30%"
     },
     {
-      "question": "【新闻速递】南南合作产生于________年代末期。\n/ Hop tac Nam-Nam ra doi vao cuoi thap nien ________.",
+      "question": "【新闻速递】原文填空：\n南南合作产生于20世纪________年代末期。",
       "options": [
-        "A. 20世纪50年代 / thap nien 50 the ky 20",
-        "B. 20世纪60年代 / thap nien 60 the ky 20",
-        "C. 20世纪70年代 / thap nien 70 the ky 20",
-        "D. 20世纪80年代 / thap nien 80 the ky 20"
+        "A. 40",
+        "B. 50",
+        "C. 60",
+        "D. 70"
       ],
-      "answer": "B. 20世纪60年代 / thap nien 60 the ky 20"
+      "answer": "C. 60"
     },
     {
-      "question": "【新闻速递】《金砖+》合作模式的目的是________。\n/ Muc dich cua mo hinh hop tac BRICS+ la ________.",
+      "question": "【新闻速递】原文填空：\n俄罗斯专家拉林认为，'金砖+'机制是本次峰会的________，这是一个新创意。",
       "options": [
-        "A. 取代G7的地位 / Thay the vi the G7",
-        "B. 构建更广泛的伙伴关系 / Xay dung quan he doi tac rong rai hon",
-        "C. 建立新的金融体系 / Xay dung he thong tai chinh moi",
-        "D. 对抗西方国家 / Doi khang voi cac nuoc phuong Tay"
+        "A. 核心议题 / van de cot loi",
+        "B. 亮点 / diem sang",
+        "C. 重大挑战 / thach thuc lon",
+        "D. 历史遗留问题 / van de lich su"
       ],
-      "answer": "B. 构建更广泛的伙伴关系 / Xay dung quan he doi tac rong rai hon"
+      "answer": "B. 亮点 / diem sang"
     },
     {
-      "question": "【快速阅读】政党与世界政党高层对话会来自多少个国家的政党代表参加？\n/ Co dai dien tu bao nhieu quoc gia tham gia?",
+      "question": "【新闻速递】原文填空：\n'金砖+'合作模式，目的是________更广泛的伙伴关系。",
       "options": [
-        "A. 90多个国家 / hon 90 quoc gia",
-        "B. 100多个国家 / hon 100 quoc gia",
-        "C. 120多个国家 / hon 120 quoc gia",
-        "D. 150多个国家 / hon 150 quoc gia"
+        "A. 取代 / thay the",
+        "B. 削弱 / lam yeu di",
+        "C. 构建 / xay dung",
+        "D. 限制 / han che"
       ],
-      "answer": "C. 120多个国家 / hon 120 quoc gia"
+      "answer": "C. 构建 / xay dung"
     },
     {
-      "question": "【快速阅读】参加此次对话会的政党和政治组织共有________个。\n/ So luong dang phai va to chuc chinh tri tham gia la ________.",
+      "question": "【注释】注释原文填空：\n'金砖国家'一词，________年由美国高盛公司首席经济学家吉姆·奥尼尔首次提出。",
       "options": [
-        "A. 100多个 / hon 100",
-        "B. 150多个 / hon 150",
-        "C. 200多个 / hon 200",
-        "D. 250多个 / hon 250"
+        "A. 1999",
+        "B. 2001",
+        "C. 2005",
+        "D. 2008"
       ],
-      "answer": "C. 200多个 / hon 200"
+      "answer": "B. 2001"
     },
     {
-      "question": "【快速阅读】文章认为，政党是各国内政外交________的力量。\n/ Bai viet cho rang, dang phai la luc luong ________ trong noi chinh va doi ngoai.",
+      "question": "【注释】注释原文填空：\nG7七国集团包括法国、美国、英国、德国、________、意大利、加拿大。",
       "options": [
-        "A. 举足轻重 / co vai tro quyet dinh",
+        "A. 中国 / Trung Quoc",
+        "B. 俄罗斯 / Nga",
+        "C. 日本 / Nhat Ban",
+        "D. 印度 / An Do"
+      ],
+      "answer": "C. 日本 / Nhat Ban"
+    },
+    {
+      "question": "【注释】注释原文填空：\n南南合作，是指________之间的经济和技术合作。",
+      "options": [
+        "A. 发达国家 / cac nuoc phat trien",
+        "B. 发展中国家 / cac nuoc dang phat trien",
+        "C. 亚洲国家 / cac nuoc chau A",
+        "D. 联合国成员国 / cac nuoc thanh vien LHQ"
+      ],
+      "answer": "B. 发展中国家 / cac nuoc dang phat trien"
+    },
+    {
+      "question": "【快速阅读】原文填空：\n来自________多个国家的200多个政党和政治组织领导人，围绕《构建人类命运共同体，共同建设美好世界：政党的责任》的议题进行深入对话。",
+      "options": [
+        "A. 80",
+        "B. 100",
+        "C. 120",
+        "D. 150"
+      ],
+      "answer": "C. 120"
+    },
+    {
+      "question": "【快速阅读】原文填空：\n政党，是各国内政外交________的力量。",
+      "options": [
+        "A. 举足轻重 / co tam anh huong lon",
         "B. 微不足道 / nho be khong dang ke",
         "C. 可有可无 / co cung duoc khong co cung duoc",
-        "D. 独当一面 / doc lap ganh vac"
+        "D. 独当一面 / mot minh ganh vac"
       ],
-      "answer": "A. 举足轻重 / co vai tro quyet dinh"
+      "answer": "A. 举足轻重 / co tam anh huong lon"
     },
     {
-      "question": "【延伸阅读】IMF传递全球经济增长放缓信息是在________。\n/ IMF truyen di thong tin tang truong kinh te toan cau cham lai vao ________.",
+      "question": "【快速阅读】原文填空：\n中国共产党是为中国人民谋取幸福的政党，把为人类做出更大的贡献作为自己的________。",
       "options": [
-        "A. 6月18日 / ngay 18/6",
-        "B. 6月28日 / ngay 28/6",
-        "C. 7月18日 / ngay 18/7",
-        "D. 7月28日 / ngay 28/7"
+        "A. 目标 / muc tieu",
+        "B. 使命 / su menh",
+        "C. 义务 / nghia vu",
+        "D. 职责 / trach nhiem"
       ],
-      "answer": "B. 6月28日 / ngay 28/6"
+      "answer": "B. 使命 / su menh"
     },
     {
-      "question": "【延伸阅读】文章提到，意大利的债务占本国GDP的________。\n/ No cua Italy chiem ________ GDP cua nuoc nay.",
+      "question": "【快速阅读】原文填空：\n此次对话创建一个政党交流合作机制，不但在人类历史上________，而且对推动国际秩序朝更加公平合理方向发展具有深远意义。",
+      "options": [
+        "A. 已有先例 / da co tien le",
+        "B. 是第一次 / la lan dau tien",
+        "C. 意义有限 / y nghia han che",
+        "D. 受到批评 / bi phe binh"
+      ],
+      "answer": "B. 是第一次 / la lan dau tien"
+    },
+    {
+      "question": "【快速阅读】注释填空：\n亚洲政党专题会议，是在亚洲政党国际会议框架内举办的活动，亚洲政党国际会议是推动亚洲的主要政党参与的________论坛。",
+      "options": [
+        "A. 多边 / da phuong",
+        "B. 双边 / song phuong",
+        "C. 军事 / quan su",
+        "D. 经济 / kinh te"
+      ],
+      "answer": "A. 多边 / da phuong"
+    },
+    {
+      "question": "【延伸阅读】原文填空：\n这是国际货币基金组织（IMF）________传递出来的信息，近年来全球经济呈现的增长势头将要消退。",
+      "options": [
+        "A. 6月8日 / ngay 8/6",
+        "B. 6月18日 / ngay 18/6",
+        "C. 6月28日 / ngay 28/6",
+        "D. 7月8日 / ngay 8/7"
+      ],
+      "answer": "C. 6月28日 / ngay 28/6"
+    },
+    {
+      "question": "【延伸阅读】原文填空：\n意大利的债务占本国GDP的________，且银行系统充满风险，这是整个欧元区面临的大麻烦。",
       "options": [
         "A. 100%",
-        "B. 120%",
+        "B. 112%",
         "C. 132%",
         "D. 150%"
       ],
       "answer": "C. 132%"
     },
     {
-      "question": "【延伸阅读】美联储加息对新兴市场国家的主要影响是________。\n/ Viec Fed tang lai suat anh huong den cac nuoc thi truong moi noi nhu the nao?",
+      "question": "【延伸阅读】原文填空：\n据西班牙媒体报道，对经济增长的乐观主义正在转变为对________发生的担忧。",
       "options": [
-        "A. 引发了新兴市场国家的债务和货币危机 / Kich hoat khung hoang no va tien te o cac nuoc thi truong moi noi",
-        "B. 促进了新兴市场国家经济发展 / Thuc day phat trien kinh te",
-        "C. 对新兴市场国家没有影响 / Khong anh huong",
-        "D. 改善了新兴市场国家的贸易条件 / Cai thien dieu kien thuong mai"
+        "A. 通货膨胀 / lam phat",
+        "B. 贸易战 / chien tranh thuong mai",
+        "C. 汇率波动 / bien dong ty gia",
+        "D. 政治危机 / khung hoang chinh tri"
       ],
-      "answer": "A. 引发了新兴市场国家的债务和货币危机 / Kich hoat khung hoang no va tien te o cac nuoc thi truong moi noi"
+      "answer": "B. 贸易战 / chien tranh thuong mai"
     }
   ]
 }
