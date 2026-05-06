@@ -2,104 +2,184 @@
   "section": "第五单元 国家关系 / Don vi 5: Quan he quoc gia",
   "questions": [
     {
-      "question": "【新闻速递】文章认为，俄美关系陷入了________旋涡。\n/ Bai viet cho rang, quan he Nga-My roi vao vong xoay ________.",
+      "question": "【新闻速递】原文填空：\n俄罗斯遭到美国和西方国家连环出击，一些国际评论认为，俄罗斯成了\"________\"，俄罗斯自己公开嘱属反美，在俄美关系来往拉锯中，真相似乎已不那么重要了。",
       "options": [
-        "A. 军事对抗 / doi dau quan su",
-        "B. 经济竞争 / canh tranh kinh te",
-        "C. 后真相 / hau su that",
-        "D. 信息战 / chien tranh thong tin"
+        "A. 背锅侠 / kẻ gánh tội (bèiguōxiá)",
+        "B. 替罪羊 / con dê tế thần (tìzuìyáng)",
+        "C. 冤大头 / người bị oan (yuāndàtóu)",
+        "D. 出头鸟 / kẻ nổi bật bị nhắm (chūtóuniǎo)"
       ],
-      "answer": "C. 后真相 / hau su that"
+      "answer": "A. 背锅侠 / kẻ gánh tội (bèiguōxiá)"
     },
     {
-      "question": "【新闻速递】俄罗斯惯用的干涉手段是________。\n/ Nga thuong dung ________ de can thiep.",
+      "question": "【新闻速递】原文填空：\n俄罗斯又接连遭到英国、西班牙等欧洲国家连环出击，指责俄罗斯与英国\"________\"、加泰罗尼亚\"闹独\"等事件脱不了干系。",
       "options": [
-        "A. 军事威胁和武力入侵 / de doa quan su va xam luoc vu trang",
-        "B. 经济制裁和贸易封锁 / trung phat kinh te va phong toa thuong mai",
-        "C. 媒体、能源和电信机构 / truyen thong, nang luong va vien thong",
-        "D. 外交孤立和国际制裁 / co lap ngoai giao va trung phat quoc te"
+        "A. 脱欧 / Brexit (tuōōu)",
+        "B. 公投 / trưng cầu dân ý (gōngtóu)",
+        "C. 制裁 / trừng phạt (zhìcái)",
+        "D. 退约 / rút khỏi hiệp ước (tuìyuē)"
       ],
-      "answer": "C. 媒体、能源和电信机构 / truyen thong, nang luong va vien thong"
+      "answer": "A. 脱欧 / Brexit (tuōōu)"
     },
     {
-      "question": "【新闻速递】文章中提到，英国通过了________公投。\n/ Bai viet de cap, Anh da thong qua cuoc trung cau dan y ve ________.",
+      "question": "【新闻速递】原文填空：\n在信息传播过程中，真相似乎已无关紧要，重要的是各方的________和观点，这是\"后真相\"时代的典型特征。",
       "options": [
-        "A. 苏格兰独立 / doc lap Scotland",
-        "B. 脱欧 / Brexit",
-        "C. 加泰罗尼亚独立 / doc lap Catalonia",
-        "D. 北爱尔兰统一 / thong nhat Bac Ireland"
+        "A. 情感 / cảm xúc (qínggǎn)",
+        "B. 立场 / lập trường (lìchǎng)",
+        "C. 利益 / lợi ích (lìyì)",
+        "D. 态度 / thái độ (tàidù)"
       ],
-      "answer": "B. 脱欧 / Brexit"
+      "answer": "A. 情感 / cảm xúc (qínggǎn)"
     },
     {
-      "question": "【新闻速递】俄美之间《后真相》的核心问题是________。\n/ Van de cot loi cua《hau su that》giua Nga va My la ________.",
+      "question": "【新闻速递】原文填空：\n\"俄罗斯威胁论\"再次被炒作，这些隐藏的国际舆论，必然会使俄罗斯的________大为折损。",
       "options": [
-        "A. 两国之间存在领土争端 / hai nuoc co tranh chap lanh tho",
-        "B. 信息传播中相互发酵的情感和观点 / cam xuc va quan diem khuech dai lan nhau trong truyen thong",
-        "C. 双方军备竞赛不断升级 / cuoc dua vu trang leo thang lien tuc",
-        "D. 经济利益冲突无法调和 / xung dot loi ich kinh te khong the hoa giai"
+        "A. 国际形象 / hình ảnh quốc tế",
+        "B. 军事实力 / sức mạnh quân sự",
+        "C. 经济影响 / ảnh hưởng kinh tế",
+        "D. 外交关系 / quan hệ ngoại giao"
       ],
-      "answer": "B. 信息传播中相互发酵的情感和观点 / cam xuc va quan diem khuech dai lan nhau trong truyen thong"
+      "answer": "A. 国际形象 / hình ảnh quốc tế"
     },
     {
-      "question": "【新闻速递】俄罗斯总统新闻秘书佩斯科夫表示，俄美关系目前处于________。\n/ Peskov cho biet, quan he Nga-My hien dang o muc ________.",
+      "question": "【注释】注释填空：\n冷战思维（Cold War mentality）：广义的冷战思维指在________期间，在两大集团对峙、两个超级大国争霸的过程中所形成的处理国家间关系的思维模式。",
       "options": [
-        "A. 历史最高点 / muc cao nhat lich su",
-        "B. 历史最低点 / muc thap nhat lich su",
-        "C. 正常水平 / muc binh thuong",
-        "D. 缓慢改善中 / dang cai thien dan"
+        "A. 冷战 / Chiến tranh Lạnh (lěngzhàn)",
+        "B. 二战 / Chiến tranh Thế giới II (Èr Zhàn)",
+        "C. 越战 / Chiến tranh Việt Nam (Yuè Zhàn)",
+        "D. 朝战 / Chiến tranh Triều Tiên (Cháo Zhàn)"
       ],
-      "answer": "B. 历史最低点 / muc thap nhat lich su"
+      "answer": "A. 冷战 / Chiến tranh Lạnh (lěngzhàn)"
     },
     {
-      "question": "【快速阅读】朝韩会谈双赢是指________。\n/ Muc tieu hai ben cung thang cua dam phan lien Trieu la ________.",
+      "question": "【注释】注释填空：\n脱欧公投：2013年1月23日，英国首相________首次提及脱欧公投，2015年提出将于2017年举行脱欧公投的承诺。",
       "options": [
-        "A. 朝鲜获得经济援助，韩国实现半岛稳定 / Trieu Tien nhan vien tro kinh te, Han Quoc dat on dinh ban dao",
-        "B. 双方同时实现无核化和经济发展 / ca hai cung dat phi hat nhan hoa va phat trien kinh te",
-        "C. 在对话中各取所需 / trong dam phan moi ben dat duoc dieu minh can",
-        "D. 朝鲜弃核换取解除制裁 / Trieu Tien tu bo hat nhan doi lay do bo trung phat"
+        "A. 卡梅伦 / Cameron (Kǎmèilún)",
+        "B. 梅 / May (Méi)",
+        "C. 布莱尔 / Blair (Bùláiěr)",
+        "D. 约翰逊 / Johnson (Yuēhànxùn)"
       ],
-      "answer": "A. 朝鲜获得经济援助，韩国实现半岛稳定 / Trieu Tien nhan vien tro kinh te, Han Quoc dat on dinh ban dao"
+      "answer": "A. 卡梅伦 / Cameron (Kǎmèilún)"
     },
     {
-      "question": "【快速阅读】文章认为，美国贸易保护主义从长远看会导致________。\n/ Bai viet cho rang, chu nghia bao ho thuong mai My ve lau dai se dan den ________.",
+      "question": "【注释】注释填空：\n英国女王伊丽莎白二世批准\"脱欧\"法案，授权英国首相________正式启动脱欧程序。",
       "options": [
-        "A. 强化美国的贸易优势 / cung co uu the thuong mai cua My",
-        "B. 导致美国生产力水平和利润率下降 / khien nang suat va loi nhuan cua My sut giam",
-        "C. 推动美国制造业复兴 / thuc day su hoi sinh nganh che tao cua My",
-        "D. 帮助美国平衡贸易赤字 / giup My can bang tham hut thuong mai"
+        "A. 梅 / May (Méi)",
+        "B. 卡梅伦 / Cameron (Kǎmèilún)",
+        "C. 布莱尔 / Blair (Bùláiěr)",
+        "D. 约翰逊 / Johnson (Yuēhànxùn)"
       ],
-      "answer": "B. 导致美国生产力水平和利润率下降 / khien nang suat va loi nhuan cua My sut giam"
+      "answer": "A. 梅 / May (Méi)"
     },
     {
-      "question": "【延伸阅读】默克尔认为，德国面临的最大挑战是________。\n/ Merkel cho rang thach thuc lon nhat cua Duc la ________.",
+      "question": "【快速阅读】原文填空：\n朝鲜方的积极态度释放出朝鲜半岛冬奥________信号，双方都能从关系改善中\"加分\"。",
       "options": [
-        "A. 移民和难民问题 / van de di cu va nguoi ti nan",
-        "B. 政治分裂和社会对立 / chia re chinh tri va doi lap xa hoi",
-        "C. 数字化转型 / chuyen doi so",
-        "D. 应对气候变化 / ung pho bien doi khi hau"
+        "A. 回暖 / hâm nóng trở lại (huínuǎn)",
+        "B. 紧张 / căng thẳng (jǐnzhāng)",
+        "C. 缓和 / hòa dịu (huǎnhé)",
+        "D. 突破 / đột phá (túpò)"
       ],
-      "answer": "B. 政治分裂和社会对立 / chia re chinh tri va doi lap xa hoi"
+      "answer": "A. 回暖 / hâm nóng trở lại (huínuǎn)"
     },
     {
-      "question": "【延伸阅读】默克尔致辞中强调的核心价值是________。\n/ Gia tri cot loi Merkel nhan manh la ________.",
+      "question": "【快速阅读】原文填空：\n朝方代表以________部长赵明均任团长，成员还包括统一部官员、文化体育旅游部官员及平昌冬奥会委员会委员4人。",
       "options": [
-        "A. 经济增长和技术创新 / tang truong kinh te va doi moi cong nghe",
-        "B. 尊重他人、换位思考、面对面沟通 / ton trong nguoi khac, dat minh vao vi tri nguoi khac, giao tiep truc tiep",
-        "C. 军事实力和国家安全 / suc manh quan su va an ninh quoc gia",
-        "D. 民主选举和多党政治 / bau cu dan chu va chinh tri da dang"
+        "A. 统一 / Bộ Thống nhất (tǒngyī)",
+        "B. 外交 / Bộ Ngoại giao (wàijiāo)",
+        "C. 国防 / Bộ Quốc phòng (guófáng)",
+        "D. 体育 / Bộ Thể thao (tǐyù)"
       ],
-      "answer": "B. 尊重他人、换位思考、面对面沟通 / ton trong nguoi khac, dat minh vao vi tri nguoi khac, giao tiep truc tiep"
+      "answer": "A. 统一 / Bộ Thống nhất (tǒngyī)"
     },
     {
-      "question": "【延伸阅读】加泰罗尼亚独立公投在哪个国家发生？\n/ Cuoc trung cau dan y doc lap Catalonia xay ra o nuoc nao?",
+      "question": "【快速阅读】原文填空：\n朝韩双方曾于________年和2007年两次实现首脑会晤，并就实现民族统一和开展各领域合作先后两次签署了共同宣言。",
       "options": [
-        "A. 法国 / Phap",
-        "B. 意大利 / Italy",
-        "C. 西班牙 / Tay Ban Nha",
-        "D. 葡萄牙 / Bo Dao Nha"
+        "A. 2000",
+        "B. 1998",
+        "C. 2003",
+        "D. 2005"
       ],
-      "answer": "C. 西班牙 / Tay Ban Nha"
+      "answer": "A. 2000"
+    },
+    {
+      "question": "【快速阅读】原文填空：\n2016年，随着韩国单方面关闭了________工业园，双方接触彻底中断，关系随之跌入谷底。",
+      "options": [
+        "A. 开城 / Kaesong (Kāichéng)",
+        "B. 平壤 / Bình Nhưỡng (Píngrǎng)",
+        "C. 元山 / Wonsan (Yuánshān)",
+        "D. 新义州 / Sinuiju (Xīnyìzhōu)"
+      ],
+      "answer": "A. 开城 / Kaesong (Kāichéng)"
+    },
+    {
+      "question": "【快速阅读】原文填空：\n耶鲁大学朝鲜研究中心主任郑继永说，平昌冬奥会只是两方处理关系的\"________\"，真正\"上大餐\"的时机还没到来。",
+      "options": [
+        "A. 前奏 / khúc dạo đầu (qiánzòu)",
+        "B. 序幕 / màn mở đầu (xùmù)",
+        "C. 开始 / khởi đầu (kāishǐ)",
+        "D. 转机 / bước ngoặt (zhuǎnjī)"
+      ],
+      "answer": "A. 前奏 / khúc dạo đầu (qiánzòu)"
+    },
+    {
+      "question": "【快速阅读】注释填空：\n\"和平之家\"是南北双方在板门店地区，纵约方________米的\"共同警察区\"内建立的主要谈判场所之一。",
+      "options": [
+        "A. 800",
+        "B. 500",
+        "C. 1000",
+        "D. 300"
+      ],
+      "answer": "A. 800"
+    },
+    {
+      "question": "【延伸阅读】原文填空：\n美国从7月6日开始对从中国进口的约________亿美元商品加征关税，这种霸凌主义做法不仅损害全球企业，更将冲击国际贸易规则，注定难逃失败命运。",
+      "options": [
+        "A. 340",
+        "B. 250",
+        "C. 500",
+        "D. 160"
+      ],
+      "answer": "A. 340"
+    },
+    {
+      "question": "【延伸阅读】原文填空：\n美方搬起对华经贸摩擦的一大借口是美国对华贸易________过大，认为美国在中美贸易中\"吃了亏\"。",
+      "options": [
+        "A. 逆差 / thâm hụt thương mại (nìchā)",
+        "B. 顺差 / thặng dư thương mại (shùnchā)",
+        "C. 赤字 / thâm hụt ngân sách (chìzì)",
+        "D. 壁垒 / rào cản thương mại (bìlěi)"
+      ],
+      "answer": "A. 逆差 / thâm hụt thương mại (nìchā)"
+    },
+    {
+      "question": "【延伸阅读】原文填空：\n业界专家普遍认为，贸易\"顺差\"与\"逆差\"不能用来衡量国家之间贸易关系的\"________\"与\"输\"，也不能代表一国经济发展的好坏。",
+      "options": [
+        "A. 赢 / thắng (yíng)",
+        "B. 强 / mạnh (qiáng)",
+        "C. 优 / ưu thế (yōu)",
+        "D. 胜 / chiến thắng (shèng)"
+      ],
+      "answer": "A. 赢 / thắng (yíng)"
+    },
+    {
+      "question": "【延伸阅读】原文填空：\n有分析显示，美方征税产品清单中，有约________%涉及在华外资企业生产的产品，其中美国企业占有相当比例。",
+      "options": [
+        "A. 59",
+        "B. 40",
+        "C. 75",
+        "D. 30"
+      ],
+      "answer": "A. 59"
+    },
+    {
+      "question": "【延伸阅读】原文填空：\n如今，大到汽车飞机、小到智能手机，产品零部件都来自全球________，产品制造不再是一国\"国家队运动\"。",
+      "options": [
+        "A. 供应链 / chuỗi cung ứng toàn cầu (gōngyìngliàn)",
+        "B. 贸易网 / mạng lưới thương mại (màoyìwǎng)",
+        "C. 生产线 / dây chuyền sản xuất (shēngchǎnxiàn)",
+        "D. 工厂体系 / hệ thống nhà máy"
+      ],
+      "answer": "A. 供应链 / chuỗi cung ứng toàn cầu (gōngyìngliàn)"
     }
   ]
 }
