@@ -1,0 +1,461 @@
+========================================================================
+WORKFLOW TỔNG THỂ — ỨNG DỤNG ÔN THI TRẮC NGHIỆM
+Mô tả đầy đủ luồng công việc, cấu trúc dự án, và hướng dẫn mở rộng
+Người viết: Claude — cập nhật 2026-05-06
+========================================================================
+
+========================================================================
+PHẦN 1: TỔNG QUAN DỰ ÁN
+========================================================================
+
+TÊN DỰ ÁN: Ứng dụng ôn thi trắc nghiệm (Flet desktop/web)
+
+FILE CHẠY CHÍNH: c:\vscode\code\TN_MMT\quiz_app.py
+
+CHẠY LOCAL:
+  python c:\vscode\code\TN_MMT\quiz_app.py
+  → Mở cửa sổ desktop (Flet)
+
+CHẠY WEB (Railway):
+  Nếu biến môi trường PORT tồn tại → chạy web server trên port đó
+  → Dùng cho điện thoại / trình duyệt
+
+THƯ VIỆN CẦN CÀI:
+  pip install flet pdfplumber PyMuPDF pytesseract Pillow pypdf
+
+========================================================================
+PHẦN 2: CẤU TRÚC THƯ MỤC
+========================================================================
+
+c:\vscode\code\TN_MMT\
+│
+├── quiz_app.py                    ← App chính (Flet UI)
+├── pdf_to_json.py                 ← Tool chuyển PDF có text layer → JSON
+├── requirements.txt               ← Danh sách thư viện
+│
+├── lichsudang\                    ← Môn "Lịch sử Đảng" (subfolder = 1 môn học)
+│   ├── chuong1.json               ← Câu hỏi theo chương (dùng cho "Ôn theo chương")
+│   ├── chuong2.json
+│   ├── chuong3.json
+│   ├── chuong5.json
+│   ├── chuong6.json
+│   ├── bosungc1.json              ← Câu bổ sung chương 1
+│   ├── file1_fixed.json           ← Bộ đề file1 (290 câu) — HOÀN CHỈNH
+│   ├── file2.json                 ← Bộ đề file2 (141 câu) — HOÀN CHỈNH
+│   ├── file3_fixed.json           ← Bộ đề file3 (140 câu) — CHƯA CÓ ĐÁP ÁN
+│   ├── file4.json                 ← Bộ đề file4 (270 câu) — HOÀN CHỈNH
+│   └── [raw text OCR, scripts...] ← Tệp phụ trợ
+│
+├── mangmaytinh\                   ← Môn "Mạng Máy Tính" (subfolder = 1 môn học)
+│   ├── ip_header.json
+│   ├── tcp_header.json
+│   └── ...
+│
+├── WORKFLOW_PDF_MOI.txt           ← Hướng dẫn xử lý file PDF OCR mới
+├── WORKFLOW_TIEP_THEO.txt         ← Trạng thái đợt OCR file1 (đợt 8 chưa làm)
+├── WORKFLOW_TRANG_THAI_file4.txt  ← Trạng thái file4 (HOÀN THÀNH)
+└── WORKFLOW_TONG_THE.txt          ← FILE NÀY — tổng quan dự án
+
+NGUYÊN TẮC THƯ MỤC:
+  - Mỗi môn học = 1 subfolder con trực tiếp trong TN_MMT\
+  - App tự động quét tất cả subfolder, hiện lên dropdown "Môn học"
+  - Tên subfolder "mangmaytinh" → hiển thị "Mạng Máy Tính" (hardcode trong app)
+  - Tên subfolder khác → capitalize (ví dụ "lichsudang" → "Lichsudang")
+    (nên đặt tên đẹp hoặc sửa trong app nếu cần)
+
+========================================================================
+PHẦN 3: ĐỊNH DẠNG FILE DỮ LIỆU JSON
+========================================================================
+
+3.1 — FILE BỘ ĐỀ THÔNG THƯỜNG (file1_fixed.json, file2.json, ...)
+──────────────────────────────────────────────────────────────────
+{
+  "section": "tên bộ đề",
+  "questions": [
+    {
+      "question": "Nội dung câu hỏi đầy đủ?",
+      "options": [
+        "A. Lựa chọn A",
+        "B. Lựa chọn B",
+        "C. Lựa chọn C",
+        "D. Lựa chọn D"
+      ],
+      "answer": "B. Lựa chọn B"
+    },
+    ...
+  ]
+}
+
+QUY TẮC BẮT BUỘC:
+  - "answer" PHẢI là chuỗi đầy đủ khớp y hệt 1 phần tử trong "options"
+  - "answer" KHÔNG được để rỗng ""
+  - "options" bắt đầu bằng "A. " "B. " "C. " "D. " (chấm + khoảng trắng)
+  - Có thể có 2, 3, hoặc 4 options (không bắt buộc đủ 4)
+
+3.2 — FILE THEO CHƯƠNG (chuong1.json, chuong2.json, ...)
+──────────────────────────────────────────────────────────
+Cấu trúc y hệt bộ đề thông thường, THÊM field "chuong" ở mỗi câu:
+
+{
+  "section": "Chương 1",
+  "questions": [
+    {
+      "question": "...",
+      "options": [...],
+      "answer": "...",
+      "chuong": 1        ← BẮT BUỘC cho file chuong*.json
+    },
+    ...
+  ]
+}
+
+Hoặc không có field "chuong" trong JSON, app sẽ tự gán khi load
+(dùng hàm load_chuong_data()).
+
+TÊN FILE CHUẨN:
+  chuong1.json, chuong2.json, chuong3.json, ...
+  bosungc1.json, bosungc2.json, ... (câu bổ sung chương 1, 2, ...)
+
+3.3 — FILE .TXT (định dạng đơn giản)
+──────────────────────────────────────
+App cũng đọc file .txt với định dạng:
+
+[Tên bộ đề]
+
+Câu hỏi thứ nhất?
+A. Đáp án A
+B. Đáp án B
+C. Đáp án C
+D. Đáp án D
+=> B
+
+Câu hỏi thứ hai?
+...
+=> A
+
+========================================================================
+PHẦN 4: CÁCH APP HOẠT ĐỘNG (quiz_app.py)
+========================================================================
+
+4.1 — MÀN HÌNH CHÀO (show_welcome)
+────────────────────────────────────
+1. Quét tất cả subfolder trong TN_MMT\ → tìm folder có file .json/.txt/.pdf
+2. Dropdown "Môn học" để chuyển môn
+3. Nếu môn có chuong*.json:
+   → Hiển thị "Ôn theo chương" (cards với icon + dropdown phạm vi câu)
+   → Dropdown phạm vi: Tất cả / Câu 1-50 / Câu 51-100 / ...
+4. Phần "Ôn theo bộ đề" (radio buttons):
+   → Khi chọn 1 bộ đề có >50 câu → hiện thêm chips chọn phạm vi
+   → Chips: "Tất cả (N câu)" / "Câu 1–50" / "Câu 51–100" / ...
+5. Checkbox "Xáo trộn câu hỏi"
+6. Nút "BẮT ĐẦU ÔN TẬP"
+
+4.2 — MÀN HÌNH CÂU HỎI (show_quiz)
+────────────────────────────────────
+- Hiển thị từng câu, chọn đáp án → màu xanh/đỏ
+- Nút "Câu tiếp" / "Câu trước" / "Bỏ qua"
+- Badge hiển thị tên chương hoặc tên bộ đề
+- Nút "Quay về" trang chủ
+
+4.3 — MÀN HÌNH KẾT QUẢ (show_result)
+───────────────────────────────────────
+- Điểm, phần trăm, nhận xét (Xuất sắc / Khá / Cần ôn thêm)
+- "Làm lại câu sai" — chỉ ôn lại câu trả lời sai
+- "Thi lại" — làm lại từ đầu cùng bộ câu
+- "Về trang chủ"
+
+4.4 — LOGIC CHỌN CÂU
+──────────────────────
+start_quiz(mode, num, batch="all"):
+  - mode="all" → toàn bộ questions_db
+  - mode=<section_key> → lọc theo section
+  - batch="0" → lấy câu [0:50]
+  - batch="50" → lấy câu [50:100]
+  - batch="all" → lấy tất cả
+
+start_quiz_clo(selections):
+  - selections = [(ch_num, batch_val), ...]
+  - Gộp câu từ nhiều chương, lọc theo batch
+
+========================================================================
+PHẦN 5: TRẠNG THÁI DỮ LIỆU HIỆN TẠI (2026-05-06)
+========================================================================
+
+MÔN: LỊCH SỬ ĐẢNG (thư mục lichsudang\)
+
+┌─────────────────────┬────────┬───────────┬────────────────────────────┐
+│ File                │ Câu   │ Answer    │ Ghi chú                    │
+├─────────────────────┼────────┼───────────┼────────────────────────────┤
+│ chuong1.json        │ 310   │ ĐỦ (0/310)│ Dùng cho "Ôn theo chương" │
+│ chuong2.json        │ 304   │ ĐỦ (0/304)│ Dùng cho "Ôn theo chương" │
+│ chuong3.json        │ 315   │ ĐỦ (0/315)│ Dùng cho "Ôn theo chương" │
+│ chuong5.json        │ 41    │ ĐỦ (0/41) │ Ôn tập chương 5           │
+│ chuong6.json        │ 38    │ ĐỦ (0/38) │ Ôn tập chương 6           │
+│ bosungc1.json       │ 31    │ ĐỦ (0/31) │ Bổ sung chương 1          │
+├─────────────────────┼────────┼───────────┼────────────────────────────┤
+│ file1_fixed.json    │ 290   │ ĐỦ (0/290)│ Bộ đề 1 — HOÀN CHỈNH     │
+│ file2.json          │ 141   │ ĐỦ (0/141)│ Bộ đề 2 — HOÀN CHỈNH     │
+│ file3_fixed.json    │ 140   │ THIẾU TẤT │ CẦN ĐIỀN ĐÁP ÁN           │
+│ file4.json          │ 270   │ ĐỦ (0/270)│ Bộ đề 4 — HOÀN CHỈNH     │
+└─────────────────────┴────────┴───────────┴────────────────────────────┘
+
+VIỆC CÒN LẠI:
+  1. file3_fixed.json: 140 câu CHƯA có answer → cần điền đáp án
+     → Đọc WORKFLOW_PDF_MOI.txt để biết quy trình
+     → File PDF gốc: C:\Users\Admin\Downloads\LSD\file3.pdf (nếu có)
+
+  2. file1.json (353 câu): file cũ, bị thay thế bởi file1_fixed.json
+     → Không cần dùng nữa
+
+MÔN: MẠNG MÁY TÍNH (thư mục mangmaytinh\)
+  - ip_header.json, tcp_header.json: bộ đề đã hoàn chỉnh
+
+========================================================================
+PHẦN 6: QUY TRÌNH XỬ LÝ FILE PDF MỚI → JSON
+========================================================================
+
+Có 2 loại PDF:
+
+LOẠI 1: PDF CÓ TEXT LAYER (extract trực tiếp — nhanh, chính xác)
+──────────────────────────────────────────────────────────────────
+Kiểm tra:
+  python -c "import fitz; doc=fitz.open('file.pdf'); print(repr(doc[0].get_text()[:200]))"
+  → Nếu có text tiếng Việt → dùng cách này
+
+Dùng tool pdf_to_json.py:
+  python c:\vscode\code\TN_MMT\pdf_to_json.py
+
+Hoặc script inline:
+  python -c "
+  import fitz, json
+  doc = fitz.open(r'C:\Users\Admin\Downloads\LSD\fileX.pdf')
+  text = ''
+  for page in doc:
+      text += page.get_text()
+  # ... parse text → JSON
+  "
+
+file4.pdf là ví dụ đã dùng cách này (extract_file4.py).
+
+LOẠI 2: PDF SCAN (cần OCR — chậm hơn, cần sửa lỗi)
+──────────────────────────────────────────────────────
+Đọc WORKFLOW_PDF_MOI.txt để biết quy trình đầy đủ.
+Tóm tắt:
+  1. OCR từng đợt 10 trang → file raw text
+  2. Claude đọc raw text + JSON → viết script clean_fileX_partN.py
+  3. Chạy script → ghi vào JSON
+  4. Kiểm tra: tổng câu thiếu answer = 0
+
+Môi trường OCR:
+  Tesseract: C:\Program Files\Tesseract-OCR\tesseract.exe
+  Dữ liệu tiếng Việt: c:\vscode\code\TN_MMT\vie.traineddata
+  TESSDATA_PREFIX = c:\vscode\code\TN_MMT   ← QUAN TRỌNG
+
+========================================================================
+PHẦN 7: THÊM MÔN HỌC MỚI (DỰ ÁN MỚI)
+========================================================================
+
+Ví dụ: Muốn thêm môn "Kinh tế Chính trị"
+
+BƯỚC 1: Tạo thư mục môn học
+  Tạo thư mục: c:\vscode\code\TN_MMT\kinhtechinhri\
+  (hoặc tên bất kỳ, chỉ cần là subfolder của TN_MMT\)
+
+BƯỚC 2: Chuẩn bị file dữ liệu
+  Option A — Có file PDF:
+    → Làm theo PHẦN 6 ở trên
+    → Tạo file JSON trong thư mục môn học
+
+  Option B — Tự nhập tay:
+    → Tạo file .json hoặc .txt trong thư mục môn học
+    → Theo định dạng ở PHẦN 3
+
+  Option C — Có nhiều chương:
+    → Tạo chuong1.json, chuong2.json, ... trong thư mục môn học
+    → App tự nhận biết và hiển thị "Ôn theo chương"
+
+BƯỚC 3: Chỉnh tên hiển thị (nếu muốn)
+  Trong quiz_app.py, dòng ~336:
+    label = "Mạng Máy Tính" if d == "mangmaytinh" else d.capitalize()
+  Thêm điều kiện:
+    label = "Kinh tế Chính trị" if d == "kinhtechinhri" else ...
+
+BƯỚC 4: Chạy app → app tự quét và hiện môn mới trong dropdown
+
+BƯỚC 5 (nếu có chương): Thêm metadata chương vào CHUONG_META
+  Trong quiz_app.py, dict CHUONG_META (~dòng 204):
+  Thêm entry mới nếu muốn custom tên/màu/icon cho từng chương
+
+  Ví dụ thêm chương cho môn mới (key từ 21 trở lên để không trùng):
+    21: ("Chương 1 KTCT", "Đối tượng và phương pháp nghiên cứu", "#F48FB1"),
+    22: ("Chương 2 KTCT", "Hàng hóa và thị trường", "#A5D6A7"),
+
+  Hoặc KHÔNG cần thêm CHUONG_META — app vẫn chạy được,
+  chỉ là badge hiển thị số thay vì tên tùy chỉnh.
+
+========================================================================
+PHẦN 8: CẤU TRÚC CODE quiz_app.py
+========================================================================
+
+Các hàm chính (theo thứ tự):
+
+_parse_txt(filepath)       → đọc file .txt → (section_name, list[dict])
+_parse_json(filepath)      → đọc file .json → (section_name, list[dict])
+_parse_pdf(filepath)       → OCR PDF → (section_name, list[dict])
+load_chuong_data(dir)      → đọc chuong*.json, bosungc*.json → {ch_num: [qs]}
+load_questions(dir)        → đọc tất cả file → (all_questions, sections)
+
+main(page):
+  ├── show_welcome()       → màn hình chọn bộ đề
+  │   ├── on_subject_change() → đổi môn học
+  │   └── handle_start()   → bắt đầu quiz
+  │
+  ├── start_quiz(mode, num, batch)   → khởi động quiz bình thường
+  ├── start_quiz_clo(selections)     → khởi động quiz theo chương
+  ├── start_retry_wrong()            → ôn lại câu sai
+  │
+  ├── show_quiz()          → màn hình câu hỏi
+  │   ├── select_option()  → chọn đáp án
+  │   ├── next_question()  → câu tiếp
+  │   └── prev_question()  → câu trước
+  │
+  └── show_result()        → màn hình kết quả
+
+STATE dict (toàn bộ trạng thái quiz):
+  state = {
+    "subject": str,           # key của môn học đang chọn
+    "questions_db": list,     # tất cả câu của môn
+    "sections_db": list,      # metadata các bộ đề
+    "questions": list,        # câu đang dùng trong quiz hiện tại
+    "current": int,           # index câu hiện tại
+    "score": int,             # số câu đúng
+    "selected": str|None,     # đáp án đã chọn
+    "answered": bool,         # đã trả lời chưa
+    "results": list,          # lịch sử kết quả từng câu
+    "mode": str,              # "all" | "chuong" | <section_key>
+    "num_questions": int,     # tổng số câu trong quiz
+    "clo_data": dict,         # {ch_num: [qs]} của môn hiện tại
+    "shuffle": bool,          # có xáo trộn không
+  }
+
+MÀUSẮC (constants):
+  PRIMARY="#1565C0", SECONDARY="#1E88E5", BG_DARK="#0A1628"
+  BG_CARD="#152032", WHITE="#FFFFFF", GREEN="#2E7D32"
+  RED="#C62828", YELLOW="#F9A825", GREY="#546E7A"
+  LABEL_A="#64B5F6" (xanh dương), LABEL_B="#81C784" (xanh lá)
+  LABEL_C="#FFB74D" (cam), LABEL_D="#CE93D8" (tím)
+
+========================================================================
+PHẦN 9: CÁC SCRIPT PHỤ TRỢ ĐÃ TẠO
+========================================================================
+
+pdf_to_json.py          → Giao diện CLI để convert PDF text layer → JSON
+extract_file4.py        → Script trích xuất cụ thể file4.pdf
+fill_file4_part1/2/3.py → Điền đáp án câu 0-89, 90-179, 180-269 vào file4.json
+clean_file1_part1..8.py → Sửa và điền đáp án file1_fixed.json theo đợt
+
+KIỂM TRA NHANH:
+  # Câu thiếu answer trong fileX.json:
+  python -c "
+  import json, sys, io
+  sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+  data = json.load(open(r'lichsudang/fileX.json', encoding='utf-8'))
+  qs = data.get('questions', data)
+  empty = [i for i,q in enumerate(qs) if not q.get('answer','').strip()]
+  print('Thieu answer:', empty)
+  print('Tong:', len(empty), '/', len(qs))
+  "
+
+========================================================================
+PHẦN 10: WORKFLOW NHẮN CLAUDE CHO DỰ ÁN MỚI
+========================================================================
+
+KHI BẮT ĐẦU DỰ ÁN MỚI, NHẮN CLAUDE:
+──────────────────────────────────────
+"Đọc file WORKFLOW_TONG_THE.txt tại c:\vscode\code\TN_MMT\WORKFLOW_TONG_THE.txt
+
+Tôi muốn thêm môn học mới vào app:
+- Tên môn: [tên môn học]
+- File PDF tại: [đường dẫn file PDF]
+- Loại PDF: [có text layer / scan cần OCR]
+- Khoảng bao nhiêu câu: [ước tính]
+- Có chia chương không: [có N chương / không]
+
+Hãy:
+1. Tạo thư mục [tên]\  trong c:\vscode\code\TN_MMT\
+2. Xử lý file PDF → tạo JSON theo đúng format
+3. Thêm tên hiển thị vào quiz_app.py nếu cần
+4. Kiểm tra app chạy được với môn mới"
+
+──────────────────────────────────────
+TIẾP TỤC CÔNG VIỆC CŨ (Lịch sử Đảng), NHẮN:
+──────────────────────────────────────
+"Đọc WORKFLOW_TONG_THE.txt.
+
+Tôi muốn tiếp tục:
+- Điền đáp án cho file3_fixed.json (140 câu, hiện 0/140 có answer)
+- File PDF gốc: C:\Users\Admin\Downloads\LSD\file3.pdf (nếu có)
+
+Hãy kiểm tra PDF loại gì (text layer hay scan) và bắt đầu xử lý."
+
+========================================================================
+PHẦN 11: LƯU Ý KỸ THUẬT QUAN TRỌNG
+========================================================================
+
+1. ENCODING:
+   - Luôn dùng encoding='utf-8' khi đọc/ghi file JSON, txt
+   - Khi in ra terminal Windows: dùng PYTHONIOENCODING=utf-8 hoặc
+     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
+2. FLET VERSION:
+   - App dùng Flet >= 0.80 (có nhiều API đổi tên)
+   - Đã có patch tương thích: ft.colors = ft.Colors, ft.icons = ft.Icons
+   - Có thể có DeprecationWarning — bỏ qua, app vẫn chạy được
+
+3. ANSWER PHẢI KHỚP OPTION:
+   - answer = "B. Văn Cao"  phải khớp y hệt với options có "B. Văn Cao"
+   - Dấu ngoặc kép trong JSON có thể là " " (curly quotes) hoặc " " (straight)
+   - Nếu mismatch → script fill sẽ báo CẢNH BÁO và không ghi vào JSON
+
+4. CẤU TRÚC OPTIONS:
+   - Prefix: "A. " "B. " "C. " "D. " (chữ hoa, chấm, khoảng trắng)
+   - KHÔNG dùng "A) " hay "A: "
+   - Cần khớp chính xác để app hiển thị đúng màu khi chọn
+
+5. TESSERACT OCR:
+   - tesseract.exe: C:\Program Files\Tesseract-OCR\tesseract.exe
+   - TESSDATA_PREFIX = c:\vscode\code\TN_MMT  (chứa vie.traineddata)
+   - KHÔNG đổi TESSDATA_PREFIX sang thư mục khác
+
+6. VS CODE:
+   - Sau khi script ghi JSON xong → chuột phải file JSON → "Revert File"
+   - ĐỪNG để file JSON có thay đổi chưa lưu khi chạy script ghi
+
+========================================================================
+PHẦN 12: TRẠNG THÁI VIỆC CẦN LÀM
+========================================================================
+
+ƯU TIÊN CAO:
+  □ file3_fixed.json: 140 câu CẦN ĐIỀN ĐÁP ÁN
+    → Đọc WORKFLOW_PDF_MOI.txt
+    → Kiểm tra file3.pdf loại gì (text layer hay scan)
+
+ƯU TIÊN TRUNG BÌNH:
+  □ Sửa tên hiển thị "Lichsudang" → "Lịch sử Đảng" trong quiz_app.py
+    (dòng ~336: thêm elif d == "lichsudang": label = "Lịch sử Đảng")
+
+ĐÃ HOÀN THÀNH:
+  ✓ file1_fixed.json (290 câu) — đủ đáp án
+  ✓ file2.json (141 câu) — đủ đáp án
+  ✓ file4.json (270 câu) — đủ đáp án
+  ✓ chuong1/2/3/5/6.json — đủ đáp án
+  ✓ bosungc1.json — đủ đáp án
+  ✓ UI range chips khi chọn bộ đề (>50 câu hiện phạm vi)
+  ✓ Hỗ trợ đa môn học (dropdown)
+  ✓ Ôn theo chương với dropdown phạm vi
+  ✓ Làm lại câu sai
+  ✓ Xáo trộn câu hỏi
+
+========================================================================
+KẾT THÚC — WORKFLOW_TONG_THE.txt
+========================================================================
