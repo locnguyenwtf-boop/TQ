@@ -2,114 +2,184 @@
   "section": "第二单元 会议致辞 / Don vi 2: Dien van hoi nghi",
   "questions": [
     {
-      "question": "【新闻速递】致辞出自首届哪个论坛的开幕式？\n/ Bai phat bieu duoc doc tai le khai mac dien dan nao?",
+      "question": "【新闻速递】原文填空：\n中华人民共和国成立以来，中国人民在中国共产党的领导下，解决了13亿多人的________，减少了8亿多贫困人口，为7.7亿人提供了就业。",
       "options": [
-        "A. 首届《亚洲人权论坛》/ Dien dan Nhan quyen chau A lan dau tien",
-        "B. 首届《南南人权论坛》/ Dien dan Nhan quyen Nam-Nam lan dau tien",
-        "C. 首届《全球人权对话论坛》/ Dien dan Doi thoai Nhan quyen Toan cau lan dau tien",
-        "D. 首届《亚非人权合作论坛》/ Dien dan Hop tac Nhan quyen A-Phi lan dau tien"
+        "A. 温饱 / ổn định cuộc sống (wēnbǎo)",
+        "B. 就业 / việc làm (jiùyè)",
+        "C. 教育 / giáo dục (jiàoyù)",
+        "D. 住房 / nhà ở (zhùfáng)"
       ],
-      "answer": "B. 首届《南南人权论坛》/ Dien dan Nhan quyen Nam-Nam lan dau tien"
+      "answer": "A. 温饱 / ổn định cuộc sống (wēnbǎo)"
     },
     {
-      "question": "【新闻速递】致辞中提到，中国减少了________亿多贫困人口。\n/ Bai phat bieu de cap, Trung Quoc da giam hon ________ ty nguoi ngheo.",
+      "question": "【新闻速递】原文填空：\n人权保障并非只有________，各国都可以根据自己的国情和人权事业的发展，发展适合自己的人权保障模式。",
       "options": [
-        "A. 5亿 / 5 ty",
-        "B. 6亿 / 6 ty",
-        "C. 7亿 / 7 ty",
-        "D. 8亿 / 8 ty"
+        "A. 一种途径 / một con đường",
+        "B. 两种模式 / hai mô hình",
+        "C. 三种方案 / ba phương án",
+        "D. 多种选择 / nhiều lựa chọn"
       ],
-      "answer": "C. 7亿 / 7 ty"
+      "answer": "A. 一种途径 / một con đường"
     },
     {
-      "question": "【新闻速递】致辞中提到，中国有________亿人脱贫。\n/ Bai phat bieu de cap, Trung Quoc co ________ ty nguoi thoat ngheo.",
+      "question": "【新闻速递】原文填空：\n坚持以和平促进人权。安全是最大的人权，和平是人类之________，战争是世界之祸，没有和平，何谈人权？",
       "options": [
-        "A. 6.6亿 / 6,6 ty",
-        "B. 7亿 / 7 ty",
-        "C. 7.7亿 / 7,7 ty",
-        "D. 8亿 / 8 ty"
+        "A. 福 / phúc lành (fú)",
+        "B. 路 / con đường (lù)",
+        "C. 本 / gốc rễ (běn)",
+        "D. 源 / nguồn gốc (yuán)"
       ],
-      "answer": "C. 7.7亿 / 7,7 ty"
+      "answer": "A. 福 / phúc lành (fú)"
     },
     {
-      "question": "【新闻速递】致辞认为，人权保障________。\n/ Bai phat bieu cho rang, bao dam nhan quyen ________.",
+      "question": "【新闻速递】原文填空：\n全球约有超过________亿人须向人道援助。这些都是严重\"人权赤字\"，须强力补短板。",
       "options": [
-        "A. 只有一种途径 / chi co mot con duong",
-        "B. 并不只有一种途径，各国可以根据国情选择合适方式 / khong chi mot con duong, moi nuoc co the lua chon phu hop",
-        "C. 必须依靠国际社会共同监督 / phai dua vao su giam sat chung cua cong dong quoc te",
-        "D. 以西方标准为唯一准则 / lay tieu chuan phuong Tay lam chuan muc duy nhat"
+        "A. 1.28",
+        "B. 2.40",
+        "C. 0.80",
+        "D. 3.60"
       ],
-      "answer": "B. 并不只有一种途径，各国可以根据国情选择合适方式 / khong chi mot con duong, moi nuoc co the lua chon phu hop"
+      "answer": "A. 1.28"
     },
     {
-      "question": "【新闻速递】致辞认为，人权的核心要义在于________。\n/ Y nghia cot loi cua nhan quyen la ________.",
+      "question": "【新闻速递】原文填空：\n人权的核心要义在于促进人的全面发展，根本手段在于________，只有把人权当作合作的纽带，才能利己达人。",
       "options": [
-        "A. 促进人的全面发展，根本手段在于平等合作 / thuc day su phat trien toan dien cua con nguoi, bien phap can ban la hop tac binh dang",
-        "B. 保护个人自由，限制政府权力 / bao ve tu do ca nhan, han che quyen luc chinh phu",
-        "C. 推广西方民主制度 / pho bien che do dan chu phuong Tay",
-        "D. 建立统一的国际人权标准 / xay dung tieu chuan nhan quyen quoc te thong nhat"
+        "A. 平等合作 / hợp tác bình đẳng",
+        "B. 单边行动 / hành động đơn phương",
+        "C. 强力推广 / thúc đẩy mạnh mẽ",
+        "D. 自主发展 / phát triển tự chủ"
       ],
-      "answer": "A. 促进人的全面发展，根本手段在于平等合作 / thuc day su phat trien toan dien cua con nguoi, bien phap can ban la hop tac binh dang"
+      "answer": "A. 平等合作 / hợp tác bình đẳng"
     },
     {
-      "question": "【快速阅读】2016年是中巴建交________周年。\n/ Nam 2016 la ky niem ________ nam thiet lap quan he ngoai giao Trung Quoc - Pakistan.",
+      "question": "【新闻速递】原文填空：\n坚持以________促进人权，对于发展中国家来说，发展权是首要人权，全球约有7亿人生活在贫困线以下。",
       "options": [
-        "A. 55周年 / 55 nam",
-        "B. 60周年 / 60 nam",
-        "C. 65周年 / 65 nam",
-        "D. 70周年 / 70 nam"
+        "A. 发展 / phát triển (fāzhǎn)",
+        "B. 改革 / cải cách (gǎigé)",
+        "C. 合作 / hợp tác (hézuò)",
+        "D. 开放 / mở cửa (kāifàng)"
       ],
-      "answer": "C. 65周年 / 65 nam"
+      "answer": "A. 发展 / phát triển (fāzhǎn)"
     },
     {
-      "question": "【快速阅读】致辞提到，中国经济对全球经济增长的贡献率超过________。\n/ Dong gop cua kinh te Trung Quoc vao tang truong kinh te toan cau vuot ________.",
+      "question": "【新闻速递】原文填空：\n我们要推动提高全球人权治理体系中发展中国家的代表性和发言权，________更为公正合理的人权治理格局，让发展中国家成为国际人权合作与治理的受益者。",
       "options": [
-        "A. 20%",
-        "B. 25%",
-        "C. 30%",
-        "D. 35%"
+        "A. 构建 / xây dựng (gòujiàn)",
+        "B. 维护 / bảo vệ (wéihù)",
+        "C. 制定 / ban hành (zhìdìng)",
+        "D. 监督 / giám sát (jiāndū)"
       ],
-      "answer": "C. 30%"
+      "answer": "A. 构建 / xây dựng (gòujiàn)"
     },
     {
-      "question": "【快速阅读】中巴经济走廊（CPEC）项目于________年4月20日启动。\n/ Du an Hanh lang Kinh te Trung Quoc - Pakistan (CPEC) khoi dong ngay 20/4/________.",
+      "question": "【注释】注释填空：\n南南人权论坛：由中国国务院新闻办公室和________共同举办，首届论坛有来自70多个国家和国际组织的官员、学者等300余人出席。",
       "options": [
-        "A. 2013年 / 2013",
-        "B. 2014年 / 2014",
-        "C. 2015年 / 2015",
-        "D. 2016年 / 2016"
+        "A. 外交部 / Bộ Ngoại giao",
+        "B. 商务部 / Bộ Thương mại",
+        "C. 教育部 / Bộ Giáo dục",
+        "D. 宣传部 / Ban Tuyên giáo"
       ],
-      "answer": "C. 2015年 / 2015"
+      "answer": "A. 外交部 / Bộ Ngoại giao"
     },
     {
-      "question": "【延伸阅读】默克尔新年致辞的主题是________。\n/ Chu de bai phat bieu nam moi cua Merkel la ________.",
+      "question": "【注释】注释填空：\n首届南南人权论坛有来自________多个国家和国际组织的官员、学者等300余人出席，旨在促进发展中国家享有更加充分的人权。",
       "options": [
-        "A. 共创美好未来 / Cung tao tuong lai tuoi dep",
-        "B. 时不我待 / Thoi khong doi ta",
-        "C. 团结一致，共渡难关 / Doan ket, vuot qua kho khan",
-        "D. 数字化是德国的未来 / So hoa la tuong lai cua Duc"
+        "A. 70",
+        "B. 50",
+        "C. 100",
+        "D. 30"
       ],
-      "answer": "B. 时不我待 / Thoi khong doi ta"
+      "answer": "A. 70"
     },
     {
-      "question": "【延伸阅读】默克尔认为，德国的未来与欧洲的未来________。\n/ Merkel cho rang tuong lai cua Duc va tuong lai cua chau Au ________.",
+      "question": "【注释】注释填空：\n\"结伴不结盟\"是中国最基本的________，它产生于冷战时期，是中国作为一个实力弱小的最大发展中国家在激烈的国际形势下进行大国博弈的手段。",
       "options": [
-        "A. 相互独立，各自发展 / doc lap voi nhau, phat trien rieng",
-        "B. 息息相关，密不可分 / lien quan mat thiet, khong the tach roi",
-        "C. 互相竞争，此消彼长 / canh tranh lan nhau",
-        "D. 完全不同，走向分裂 / hoan toan khac nhau, huong den chia re"
+        "A. 外交政策 / chính sách ngoại giao",
+        "B. 发展战略 / chiến lược phát triển",
+        "C. 军事方针 / phương châm quân sự",
+        "D. 经济策略 / chiến lược kinh tế"
       ],
-      "answer": "B. 息息相关，密不可分 / lien quan mat thiet, khong the tach roi"
+      "answer": "A. 外交政策 / chính sách ngoại giao"
     },
     {
-      "question": "【延伸阅读】默克尔在新年致辞中对德国社会提出的主要挑战是________。\n/ Thach thuc chinh Merkel de cap cho xa hoi Duc la ________.",
+      "question": "【快速阅读】原文填空：\n2016年，中巴正式建交________周年，作为\"一带一路\"倡议的重大先行项目，中巴经济走廊进入全面实施阶段。",
       "options": [
-        "A. 气候变化 / bien doi khi hau",
-        "B. 难民安置问题 / van de dinh cu nguoi ti nan",
-        "C. 数字化转型 / chuyen doi so",
-        "D. 经济不平等 / bat binh dang kinh te"
+        "A. 65",
+        "B. 50",
+        "C. 70",
+        "D. 45"
       ],
-      "answer": "C. 数字化转型 / chuyen doi so"
+      "answer": "A. 65"
+    },
+    {
+      "question": "【快速阅读】原文填空：\n中巴经济走廊（CPEC）是中国总理李克强于________年5月访问巴基斯坦时提出的，初衷是加强中巴之间交通、能源、海洋等领域的交流与合作。",
+      "options": [
+        "A. 2013",
+        "B. 2015",
+        "C. 2010",
+        "D. 2016"
+      ],
+      "answer": "A. 2013"
+    },
+    {
+      "question": "【快速阅读】注释填空：\n中巴经济走廊（China-Pakistan Economic Corridor, CPEC）项目于________年4月20日正式启动。",
+      "options": [
+        "A. 2015",
+        "B. 2013",
+        "C. 2016",
+        "D. 2014"
+      ],
+      "answer": "A. 2015"
+    },
+    {
+      "question": "【快速阅读】原文填空：\n习近平主席成功访问瑞士，出席________年会并访问瑞士的国际组织，面对世界经济低迷不振，全球化浪潮动荡，国际形势动荡不安等挑战。",
+      "options": [
+        "A. 世界经济论坛 / Diễn đàn Kinh tế Thế giới",
+        "B. 联合国大会 / Đại hội đồng Liên Hợp Quốc",
+        "C. 二十国集团 / Nhóm G20",
+        "D. 上合组织 / Tổ chức Hợp tác Thượng Hải"
+      ],
+      "answer": "A. 世界经济论坛 / Diễn đàn Kinh tế Thế giới"
+    },
+    {
+      "question": "【快速阅读】原文填空：\n习近平主席阐释出中国的发展是世界的________，系统论述中国维护世界和平的决心，促进共同发展的承诺。",
+      "options": [
+        "A. 机遇 / cơ hội (jīyù)",
+        "B. 挑战 / thách thức (tiǎozhàn)",
+        "C. 威胁 / mối đe dọa (wēixié)",
+        "D. 动力 / động lực (dònglì)"
+      ],
+      "answer": "A. 机遇 / cơ hội (jīyù)"
+    },
+    {
+      "question": "【延伸阅读】原文填空：\n默克尔为德国团结而担忧，在12月31日发表的新年致辞中说：有人甚至认为，我们的社会出现了一条深深的________。",
+      "options": [
+        "A. 裂缝 / vết nứt, rạn nứt (lièfèng)",
+        "B. 危机 / khủng hoảng (wēijī)",
+        "C. 矛盾 / mâu thuẫn (máodùn)",
+        "D. 鸿沟 / hố sâu ngăn cách (hónggōu)"
+      ],
+      "answer": "A. 裂缝 / vết nứt, rạn nứt (lièfèng)"
+    },
+    {
+      "question": "【延伸阅读】原文填空：\n默克尔表示，在新的一年里尽快组建一个稳定的政府，\"________\"。她说，为了让德国在10年或15年之后仍然良好运行，必须现在做好相应的准备。",
+      "options": [
+        "A. 时不我待 / thời không chờ ta (shí bù wǒ dài)",
+        "B. 迎难而上 / đón nhận khó khăn (yíng nán ér shàng)",
+        "C. 砥砺前行 / vững bước tiến lên (dǐlì qiánxíng)",
+        "D. 共创未来 / cùng tạo dựng tương lai"
+      ],
+      "answer": "A. 时不我待 / thời không chờ ta (shí bù wǒ dài)"
+    },
+    {
+      "question": "【延伸阅读】原文填空：\n默克尔许诺将进一步加大对企业在新技术研发方面的支持，国家应该在该领域扮演\"________\"的角色。",
+      "options": [
+        "A. 数字先锋 / tiên phong số hóa (shùzì xiānfēng)",
+        "B. 市场监管者 / người giám sát thị trường",
+        "C. 创新引擎 / động cơ đổi mới (chuàngxīn yǐnqíng)",
+        "D. 技术推手 / người thúc đẩy công nghệ"
+      ],
+      "answer": "A. 数字先锋 / tiên phong số hóa (shùzì xiānfēng)"
     }
   ]
 }
