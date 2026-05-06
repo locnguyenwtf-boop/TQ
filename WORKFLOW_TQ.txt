@@ -174,64 +174,107 @@ PHẦN 6: TRẠNG THÁI HIỆN TẠI (2026-05-06)
 
 ĐÃ HOÀN THÀNH:
   ✓ don_vi_1.json — 18 câu ĐÚNG FORMAT (cloze từ bài thật + 注释)
-  ✓ don_vi_2.json — 11 câu (câu hỏi tổng quát, CHƯA đúng format mới)
-  ✓ don_vi_3.json — 10 câu (câu hỏi tổng quát, CHƯA đúng format mới)
-  ✓ don_vi_4.json — 11 câu (câu hỏi tổng quát, CHƯA đúng format mới)
-  ✓ don_vi_5.json — 10 câu (câu hỏi tổng quát, CHƯA đúng format mới)
+  ✓ don_vi_2.json — 18 câu ĐÚNG FORMAT (làm lại 2026-05-06)
+      → 新闻速递: Nam Nam nhân quyền, CPEC/Pakistan, Merkel "时不我待"
+  ✓ don_vi_3.json — 18 câu ĐÚNG FORMAT (làm lại 2026-05-06)
+      → 新闻速递: TQ đối ngoại, hải quân, 吉布提, 一带一路, 中国方案
+      → 快速阅读: Nhật-Trung 45 năm, đoàn 3000 người, 经济三团体
+      → 延伸阅读: Cải cách mở cửa 40 năm, 世界前列, 小康社会
+  ✓ don_vi_4.json — 18 câu ĐÚNG FORMAT (làm lại 2026-05-06)
+      → 新闻速递: Jerusalem/thủ đô, 2017, 14 phiếu, phủ quyết, Palestine
+      → 注释: LHQ 1945, 193 thành viên, trụ sở New York
+      → 快速阅读: Pan Ki-moon vỗ tay, "con của LHQ", Hiệp định Paris, 2008
+      → 延伸阅读: 一带一路 + SDGs, 40 năm viện trợ, Roseline 2016
+  ✓ don_vi_5.json — 18 câu ĐÚNG FORMAT (làm lại 2026-05-06)
+      → 新闻速递: Nga-Mỹ "hậu sự thật", 背锅侠, Brexit, Tư duy Chiến tranh Lạnh
+      → 快速阅读: Triều-Hàn 回暖, 开城 工业园, 2000/2007 hội nghị, 前奏
+      → 延伸阅读: Thuế quan 340 tỷ, 逆差, 59% ngoại doanh, chuỗi cung ứng
   ✓ App hiển thị môn "Báo chí Hán ngữ" (tên tiếng Việt đã cấu hình)
   ✓ Deploy lên Railway, link hoạt động
+  ✓ Trang PDF đã render: p008–p074 (tương ứng đơn vị 1–5)
 
 CẦN LÀM TIẾP (ưu tiên):
-  □ Làm lại don_vi_2.json đúng format mới (lấy câu thật từ bài)
-    → Trang PDF: 21–32 (đơn vị 2: 会议致辞)
-    → Bài 新闻速递: p021–028 (演讲/致辞 về nhân quyền, đại sứ Pakistan, Merkel)
-    → Bài 快速阅读: p029 (đại sứ Pakistan)
-    → Bài 延伸阅读: p032–033 (Merkel: 时不我待)
+  □ Tạo don_vi_6.json — 第六单元 国际安全
+    → Trang PDF: 76–86
+    → Cần render: p075–p086 (chưa có)
+    → Nội dung: an ninh quốc tế, khủng bố, xung đột
 
-  □ Làm lại don_vi_3.json đúng format mới
-    → Trang PDF: 34–44 (đơn vị 3: 对外交往)
-    → Các bài về Trung Quốc đối ngoại, Nhật-Trung, cải cách 40 năm
+  □ Tạo don_vi_7.json — 第七单元 社会治安
+    → Trang PDF: 88–99
+    → Cần render: p088–p099
 
-  □ Làm lại don_vi_4.json đúng format mới
-    → Trang PDF: 46–59 (đơn vị 4: 世界组织)
-    → Jerusalem/LHQ, Ban Ki-moon, Vành đai Con đường
+  □ Tạo don_vi_8.json — 第八单元 金融风险
+    → Trang PDF: 101–113
+    → Cần render: p101–p113
 
-  □ Làm lại don_vi_5.json đúng format mới
-    → Trang PDF: 61–74 (đơn vị 5: 国家关系)
-    → Nga-Mỹ hậu sự thật, Triều Tiên-Hàn, bảo hộ thương mại
+  □ Tạo don_vi_9.json — 第九单元 军事动态
+    → Trang PDF: 115–125
+    → Cần render: p115–p125
 
-  □ Tạo don_vi_6.json đến don_vi_12.json (đơn vị 6–12)
-    → Cần render thêm trang PDF: 76–164
-    → Mỗi đơn vị ~15–18 câu
+  □ Tạo don_vi_10.json — 第十单元 科技创新
+    → Trang PDF: 127–138
+    → Cần render: p127–p138
+
+  □ Tạo don_vi_11.json — 第十一单元 环境保护
+    → Trang PDF: 140–151
+    → Cần render: p140–p151
+
+  □ Tạo don_vi_12.json — 第十二单元 难民问题
+    → Trang PDF: 153–164
+    → Cần render: p153–p164
 
 ========================================================================
 PHẦN 7: NHẮN CLAUDE KHI BẮT ĐẦU PHIÊN MỚI
 ========================================================================
 
-NHẮN NHƯ SAU:
+MẪU NHẮN CHO PHIÊN TIẾP THEO (thay số đơn vị và trang cho phù hợp):
 ---
 Đọc file WORKFLOW_TQ.txt tại c:\vscode\code\TQ\WORKFLOW_TQ.txt
 
 Tôi muốn tiếp tục làm câu hỏi cho app báo chí Hán ngữ.
-Việc cần làm: làm lại don_vi_2.json theo đúng format mới
-(lấy câu thật từ bài, xóa từ khóa, tạo 4 đáp án song ngữ Trung–Việt).
+Việc cần làm: tạo don_vi_6.json (第六单元 国际安全, trang PDF 76-86).
 
-File ảnh đã render tại: C:\Users\Admin\Downloads\pdf_p021.png đến pdf_p032.png
-(nếu chưa có thì render trước theo hướng dẫn PHẦN 5 BƯỚC 1)
+Trang PDF chưa render — hãy render trước theo hướng dẫn PHẦN 5 BƯỚC 1
+(render trang 75 đến 86, lưu tại C:\Users\Admin\Downloads\pdf_p0XX.png).
 
 Hãy:
-1. Đọc ảnh từng batch 5 trang
-2. Trích câu từ bài đọc + phần 注释
-3. Tạo file don_vi_2.json bằng Python script
-4. Verify JSON hợp lệ rồi push lên GitHub
+1. Render ảnh nếu chưa có
+2. Đọc ảnh từng batch 5-6 trang
+3. Trích câu từ bài đọc + phần 注释
+4. Tạo file don_vi_6.json bằng Python script
+5. Verify JSON hợp lệ rồi push lên GitHub
 ---
+
+BẢNG TRA NHANH — TRANG PDF CẦN RENDER CHO MỖI ĐƠN VỊ:
+  Đơn vị 6  (国际安全):  render p075–p086
+  Đơn vị 7  (社会治安):  render p087–p099  (chú ý p087 là trang bìa đơn vị)
+  Đơn vị 8  (金融风险):  render p100–p113
+  Đơn vị 9  (军事动态):  render p114–p125
+  Đơn vị 10 (科技创新):  render p126–p138
+  Đơn vị 11 (环境保护):  render p139–p151
+  Đơn vị 12 (难民问题):  render p152–p164
+
+SCRIPT RENDER (thay START và END):
+  python -c "
+  import fitz
+  doc = fitz.open(r'C:\Users\Admin\Downloads\824101224-汉语新闻报刊阅读教程.pdf')
+  for i in range(START-1, END):
+      page = doc[i]
+      mat = fitz.Matrix(2.5, 2.5)
+      pix = page.get_pixmap(matrix=mat)
+      pix.save(fr'C:\Users\Admin\Downloads\pdf_p{i+1:03d}.png')
+  print('Done')
+  "
 
 LƯU Ý QUAN TRỌNG CHO CLAUDE:
   - Ảnh PDF đã render: C:\Users\Admin\Downloads\pdf_p0XX.png (XX = số trang)
-  - Trang 8–67 đã render sẵn, chỉ cần đọc bằng Read tool
-  - Trang 68+ cần render thêm (dùng script Python trong BƯỚC 1)
+  - Trang 008–074 đã render sẵn, chỉ cần đọc bằng Read tool
+  - Trang 075+ cần render thêm (dùng script Python ở trên)
   - File JSON tạo bằng Python script (KHÔNG Write tool trực tiếp)
-  - Verify JSON sau mỗi file: python -c "import json; json.load(open('file.json', encoding='utf-8')); print('OK')"
+  - Verify JSON sau mỗi file:
+    python -c "import json; json.load(open('baochi/don_vi_X.json', encoding='utf-8')); print('OK')"
+  - Xóa script tạm sau khi dùng: rm make_don_vi_X.py
+  - Sau khi tạo xong: git add + commit + push (Railway tự redeploy sau 2-3 phút)
 
 ========================================================================
 PHẦN 8: LƯU Ý KỸ THUẬT
