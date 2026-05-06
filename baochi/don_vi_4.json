@@ -1,8 +1,8 @@
 {
-  "section": "第四单元 世界组织 / Đơn vị 4: Tổ chức thế giới",
+  "section": "第四单元 世界组织 / Don vi 4: To chuc the gioi",
   "questions": [
     {
-      "question": "【新闻速递】美国宣布承认________为以色列首都，引发国际社会强烈反对。\n/ Mỹ tuyên bố công nhận ________ là thủ đô của Israel, gây ra phản đối mạnh mẽ từ cộng đồng quốc tế.",
+      "question": "【新闻速递】美国宣布承认________为以色列首都，引发国际社会强烈反对。\n/ My tuyen bo cong nhan ________ la thu do cua Israel.",
       "options": [
         "A. 特拉维夫 / Tel Aviv",
         "B. 海法 / Haifa",
@@ -12,7 +12,7 @@
       "answer": "C. 耶路撒冷 / Jerusalem"
     },
     {
-      "question": "【新闻速递】联合国安理会有________个常任理事国。\n/ Hội đồng Bảo an Liên Hợp Quốc có ________ ủy viên thường trực.",
+      "question": "【新闻速递】联合国安理会有________个常任理事国。\n/ Hoi dong Bao an Lien Hop Quoc co ________ uy vien thuong truc.",
       "options": [
         "A. 3个 / 3",
         "B. 5个 / 5",
@@ -22,7 +22,7 @@
       "answer": "B. 5个 / 5"
     },
     {
-      "question": "【新闻速递】有________个理事国投票支持涉耶路撒冷决议草案，但美国动用否决权。\n/ Có ________ thành viên Hội đồng Bảo an bỏ phiếu ủng hộ dự thảo nghị quyết về Jerusalem, nhưng Mỹ dùng quyền phủ quyết.",
+      "question": "【新闻速递】有________个理事国投票支持涉耶路撒冷决议草案，但美国动用否决权。\n/ Co ________ thanh vien bau phieu ung ho du thao nghi quyet ve Jerusalem, nhung My dung quyen phu quyet.",
       "options": [
         "A. 10个 / 10",
         "B. 12个 / 12",
@@ -32,57 +32,47 @@
       "answer": "C. 14个 / 14"
     },
     {
-      "question": "【新闻速递】联合国大会对耶路撒冷问题的决议草案进行表决，是美国大使馆迁址决定后第________天。\n/ Đại hội đồng Liên Hợp Quốc bỏ phiếu về dự thảo nghị quyết liên quan Jerusalem vào ngày thứ ________ sau quyết định dời đại sứ quán của Mỹ.",
+      "question": "【新闻速递】中国外交部就耶路撒冷问题表示，中方立场是________。\n/ Nguoi phat ngon Bo Ngoai giao Trung Quoc cho biet lap truong cua Trung Quoc la ________.",
       "options": [
-        "A. 第5天 / ngày thứ 5",
-        "B. 第10天 / ngày thứ 10",
-        "C. 第18天 / ngày thứ 18",
-        "D. 第30天 / ngày thứ 30"
+        "A. 支持美国的决定 / ung ho quyet dinh cua My",
+        "B. 坚决支持巴勒斯坦人民恢复合法民族权利的正义事业 / kien quyet ung ho su nghiep chinh nghia cua nguoi Palestine",
+        "C. 对耶路撒冷问题保持中立 / giu thai do trung lap",
+        "D. 通过经济手段解决争端 / giai quyet tranh chap bang bien phap kinh te"
       ],
-      "answer": "C. 第18天 / ngày thứ 18"
+      "answer": "B. 坚决支持巴勒斯坦人民恢复合法民族权利的正义事业 / kien quyet ung ho su nghiep chinh nghia cua nguoi Palestine"
     },
     {
-      "question": "【新闻速递】中国外交部发言人就耶路撒冷问题表示，中方的立场是________。\n/ Người phát ngôn Bộ Ngoại giao Trung Quốc cho biết lập trường của Trung Quốc về vấn đề Jerusalem là ________.",
+      "question": "【快速阅读】潘基文担任联合国秘书长共________年。\n/ Ban Ki-moon dam nhiem chuc Tong thu ky Lien Hop Quoc tong cong ________ nam.",
       "options": [
-        "A. 支持美国的决定 / ủng hộ quyết định của Mỹ",
-        "B. 坚决支持巴勒斯坦人民恢复合法民族权利的正义事业 / kiên quyết ủng hộ sự nghiệp chính nghĩa của người Palestine khôi phục quyền dân tộc hợp pháp",
-        "C. 对耶路撒冷问题保持中立 / giữ thái độ trung lập về vấn đề Jerusalem",
-        "D. 通过经济手段解决争端 / giải quyết tranh chấp bằng biện pháp kinh tế"
+        "A. 5年 / 5 nam",
+        "B. 8年 / 8 nam",
+        "C. 10年 / 10 nam",
+        "D. 12年 / 12 nam"
       ],
-      "answer": "B. 坚决支持巴勒斯坦人民恢复合法民族权利的正义事业 / kiên quyết ủng hộ sự nghiệp chính nghĩa của người Palestine khôi phục quyền dân tộc hợp pháp"
+      "answer": "C. 10年 / 10 nam"
     },
     {
-      "question": "【快速阅读】潘基文担任联合国秘书长共________年。\n/ Ban Ki-moon đảm nhiệm chức Tổng thư ký Liên Hợp Quốc tổng cộng ________ năm.",
+      "question": "【快速阅读】潘基文在致辞中称自己是________。\n/ Ban Ki-moon tu goi minh la ________ trong bai phat bieu.",
       "options": [
-        "A. 5年 / 5 năm",
-        "B. 8年 / 8 năm",
-        "C. 10年 / 10 năm",
-        "D. 12年 / 12 năm"
+        "A. 联合国之星 / ngoi sao Lien Hop Quoc",
+        "B. 联合国的孩子 / dua con cua Lien Hop Quoc",
+        "C. 世界公民 / cong dan the gioi",
+        "D. 和平使者 / su gia hoa binh"
       ],
-      "answer": "C. 10年 / 10 năm"
+      "answer": "B. 联合国的孩子 / dua con cua Lien Hop Quoc"
     },
     {
-      "question": "【快速阅读】潘基文在致辞中称自己是________。\n/ Ban Ki-moon tự gọi mình là ________ trong bài phát biểu.",
+      "question": "【快速阅读】潘基文是哪个国家的人？\n/ Ban Ki-moon la nguoi nuoc nao?",
       "options": [
-        "A. 联合国之星 / ngôi sao Liên Hợp Quốc",
-        "B. 联合国的孩子 / đứa con của Liên Hợp Quốc",
-        "C. 世界公民 / công dân thế giới",
-        "D. 和平使者 / sứ giả hòa bình"
+        "A. 日本 / Nhat Ban",
+        "B. 中国 / Trung Quoc",
+        "C. 韩国 / Han Quoc",
+        "D. 印度 / An Do"
       ],
-      "answer": "B. 联合国的孩子 / đứa con của Liên Hợp Quốc"
+      "answer": "C. 韩国 / Han Quoc"
     },
     {
-      "question": "【快速阅读】潘基文是哪个国家的人？\n/ Ban Ki-moon là người nước nào?",
-      "options": [
-        "A. 日本 / Nhật Bản",
-        "B. 中国 / Trung Quốc",
-        "C. 韩国 / Hàn Quốc",
-        "D. 印度 / Ấn Độ"
-      ],
-      "answer": "C. 韩国 / Hàn Quốc"
-    },
-    {
-      "question": "【延伸阅读】"一带一路"倡议始于________年。\n/ Sáng kiến "Vành đai và Con đường" bắt đầu từ năm ________.",
+      "question": "【延伸阅读】《一带一路》倡议始于________年。\n/ Sang kien Vanh dai va Con duong bat dau tu nam ________.",
       "options": [
         "A. 2011年 / 2011",
         "B. 2012年 / 2012",
@@ -92,7 +82,7 @@
       "answer": "C. 2013年 / 2013"
     },
     {
-      "question": "【延伸阅读】联合国2030可持续发展目标于________年开始实施。\n/ Mục tiêu Phát triển Bền vững 2030 của Liên Hợp Quốc bắt đầu thực hiện từ năm ________.",
+      "question": "【延伸阅读】联合国2030可持续发展目标于________年开始实施。\n/ Muc tieu Phat trien Ben vung 2030 bat dau thuc hien tu nam ________.",
       "options": [
         "A. 2013年 / 2013",
         "B. 2014年 / 2014",
@@ -102,24 +92,24 @@
       "answer": "C. 2015年 / 2015"
     },
     {
-      "question": "【延伸阅读】文章中，罗世礼认为，"一带一路"倡议可以成为________的平台。\n/ Trong bài viết, Roseline cho rằng sáng kiến "Vành đai và Con đường" có thể trở thành nền tảng để ________.",
+      "question": "【延伸阅读】罗世礼认为，《一带一路》倡议可以成为________的平台。\n/ Roseline cho rang sang kien Vanh dai va Con duong co the tro thanh nen tang de ________.",
       "options": [
-        "A. 中国扩大军事影响 / Trung Quốc mở rộng ảnh hưởng quân sự",
-        "B. 加速实现联合国可持续发展目标 / đẩy nhanh thực hiện các Mục tiêu Phát triển Bền vững của LHQ",
-        "C. 对抗西方主导的国际秩序 / đối kháng trật tự quốc tế do phương Tây chi phối",
-        "D. 建立以亚洲为中心的贸易体系 / xây dựng hệ thống thương mại lấy châu Á làm trung tâm"
+        "A. 中国扩大军事影响 / Trung Quoc mo rong anh huong quan su",
+        "B. 加速实现联合国可持续发展目标 / day nhanh thuc hien Muc tieu Phat trien Ben vung LHQ",
+        "C. 对抗西方主导的国际秩序 / doi khang trat tu quoc te do phuong Tay chi phoi",
+        "D. 建立以亚洲为中心的贸易体系 / xay dung he thong thuong mai lay chau A lam trung tam"
       ],
-      "answer": "B. 加速实现联合国可持续发展目标 / đẩy nhanh thực hiện các Mục tiêu Phát triển Bền vững của LHQ"
+      "answer": "B. 加速实现联合国可持续发展目标 / day nhanh thuc hien Muc tieu Phat trien Ben vung LHQ"
     },
     {
-      "question": "【延伸阅读】文章引用数据，"一带一路"沿线国家占全球总人口的________。\n/ Bài viết trích dẫn số liệu, các nước dọc "Vành đai và Con đường" chiếm ________ tổng dân số toàn cầu.",
+      "question": "【延伸阅读】《一带一路》沿线国家占全球总人口的________。\n/ Cac nuoc doc Vanh dai va Con duong chiem ________ tong dan so toan cau.",
       "options": [
-        "A. 三分之一 / một phần ba",
-        "B. 二分之一 / một nửa",
-        "C. 三分之二 / hai phần ba",
-        "D. 四分之三 / ba phần tư"
+        "A. 三分之一 / mot phan ba",
+        "B. 二分之一 / mot nua",
+        "C. 三分之二 / hai phan ba",
+        "D. 四分之三 / ba phan tu"
       ],
-      "answer": "C. 三分之二 / hai phần ba"
+      "answer": "C. 三分之二 / hai phan ba"
     }
   ]
 }

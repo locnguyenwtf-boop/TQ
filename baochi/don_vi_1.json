@@ -1,28 +1,28 @@
 {
-  "section": "第一单元 对话合作 / Đơn vị 1: Hợp tác đối thoại",
+  "section": "第一单元 对话合作 / Don vi 1: Hop tac doi thoai",
   "questions": [
     {
-      "question": "【新闻速递】金砖国家第九次会晤在哪个城市举行？\n/ Hội nghị thượng đỉnh BRICS lần thứ 9 được tổ chức tại thành phố nào?",
+      "question": "【新闻速递】金砖国家第九次会晤在哪个城市举行？\n/ Hoi nghi BRICS lan thu 9 duoc to chuc tai thanh pho nao?",
       "options": [
-        "A. 北京 / Bắc Kinh",
-        "B. 厦门 / Hạ Môn",
-        "C. 上海 / Thượng Hải",
-        "D. 广州 / Quảng Châu"
+        "A. 北京 / Bac Kinh",
+        "B. 厦门 / Ha Mon",
+        "C. 上海 / Thuong Hai",
+        "D. 广州 / Quang Chau"
       ],
-      "answer": "B. 厦门 / Hạ Môn"
+      "answer": "B. 厦门 / Ha Mon"
     },
     {
-      "question": "【新闻速递】本次金砖峰会的主题是________。\n/ Chủ đề của Hội nghị thượng đỉnh BRICS lần này là ________.",
+      "question": "【新闻速递】本次金砖峰会的主题是________。\n/ Chu de cua Hoi nghi BRICS lan nay la ________.",
       "options": [
-        "A. 深化金砖伙伴关系，开辟更加光明未来 / Tăng cường quan hệ đối tác BRICS, mở ra tương lai tươi sáng hơn",
-        "B. 共建繁荣世界，开创美好未来 / Cùng xây dựng thế giới thịnh vượng, tạo ra tương lai tươi đẹp",
-        "C. 推动全球治理，维护世界和平 / Thúc đẩy quản trị toàn cầu, duy trì hòa bình thế giới",
-        "D. 加强南南合作，促进共同发展 / Tăng cường hợp tác Nam-Nam, thúc đẩy phát triển chung"
+        "A. 深化金砖伙伴关系，开辟更加光明未来 / Tang cuong quan he doi tac BRICS, mo ra tuong lai tuoi sang hon",
+        "B. 共建繁荣世界，开创美好未来 / Cung xay dung the gioi thinh vuong",
+        "C. 推动全球治理，维护世界和平 / Thuc day quan tri toan cau, duy tri hoa binh the gioi",
+        "D. 加强南南合作，促进共同发展 / Tang cuong hop tac Nam-Nam, thuc day phat trien chung"
       ],
-      "answer": "A. 深化金砖伙伴关系，开辟更加光明未来 / Tăng cường quan hệ đối tác BRICS, mở ra tương lai tươi sáng hơn"
+      "answer": "A. 深化金砖伙伴关系，开辟更加光明未来 / Tang cuong quan he doi tac BRICS, mo ra tuong lai tuoi sang hon"
     },
     {
-      "question": "【新闻速递】奥尼尔预测，金砖国家经济规模将在________年前超过G7。\n/ O'Neill dự đoán quy mô kinh tế các nước BRICS sẽ vượt G7 trước năm ________.",
+      "question": "【新闻速递】奥尼尔预测，金砖国家经济规模将在________年前超过G7。\n/ ONeill du doan quy mo kinh te cac nuoc BRICS se vuot G7 truoc nam ________.",
       "options": [
         "A. 2025",
         "B. 2030",
@@ -32,7 +32,7 @@
       "answer": "C. 2035"
     },
     {
-      "question": "【新闻速递】金砖国家占全球总GDP的________。\n/ Các nước BRICS chiếm ________ tổng GDP toàn cầu.",
+      "question": "【新闻速递】金砖国家占全球总GDP的________。\n/ Cac nuoc BRICS chiem ________ tong GDP toan cau.",
       "options": [
         "A. 20%",
         "B. 25%",
@@ -42,67 +42,67 @@
       "answer": "C. 30%"
     },
     {
-      "question": "【新闻速递】南南合作产生于________年代末期。\n/ Hợp tác Nam-Nam ra đời vào cuối thập niên ________.",
+      "question": "【新闻速递】南南合作产生于________年代末期。\n/ Hop tac Nam-Nam ra doi vao cuoi thap nien ________.",
       "options": [
-        "A. 20世纪50年代 / thập niên 50 thế kỷ 20",
-        "B. 20世纪60年代 / thập niên 60 thế kỷ 20",
-        "C. 20世纪70年代 / thập niên 70 thế kỷ 20",
-        "D. 20世纪80年代 / thập niên 80 thế kỷ 20"
+        "A. 20世纪50年代 / thap nien 50 the ky 20",
+        "B. 20世纪60年代 / thap nien 60 the ky 20",
+        "C. 20世纪70年代 / thap nien 70 the ky 20",
+        "D. 20世纪80年代 / thap nien 80 the ky 20"
       ],
-      "answer": "B. 20世纪60年代 / thập niên 60 thế kỷ 20"
+      "answer": "B. 20世纪60年代 / thap nien 60 the ky 20"
     },
     {
-      "question": "【新闻速递】"金砖＋"合作模式的目的是________。\n/ Mục đích của mô hình hợp tác "BRICS+" là ________.",
+      "question": "【新闻速递】《金砖+》合作模式的目的是________。\n/ Muc dich cua mo hinh hop tac BRICS+ la ________.",
       "options": [
-        "A. 取代G7的地位 / Thay thế vị thế G7",
-        "B. 构建更广泛的伙伴关系 / Xây dựng quan hệ đối tác rộng rãi hơn",
-        "C. 建立新的金融体系 / Xây dựng hệ thống tài chính mới",
-        "D. 对抗西方国家 / Đối kháng với các nước phương Tây"
+        "A. 取代G7的地位 / Thay the vi the G7",
+        "B. 构建更广泛的伙伴关系 / Xay dung quan he doi tac rong rai hon",
+        "C. 建立新的金融体系 / Xay dung he thong tai chinh moi",
+        "D. 对抗西方国家 / Doi khang voi cac nuoc phuong Tay"
       ],
-      "answer": "B. 构建更广泛的伙伴关系 / Xây dựng quan hệ đối tác rộng rãi hơn"
+      "answer": "B. 构建更广泛的伙伴关系 / Xay dung quan he doi tac rong rai hon"
     },
     {
-      "question": "【快速阅读】政党与世界政党高层对话会来自多少个国家的政党代表参加？\n/ Đối thoại cấp cao giữa các đảng phái trên thế giới có đại diện từ bao nhiêu quốc gia tham gia?",
+      "question": "【快速阅读】政党与世界政党高层对话会来自多少个国家的政党代表参加？\n/ Co dai dien tu bao nhieu quoc gia tham gia?",
       "options": [
-        "A. 90多个国家 / hơn 90 quốc gia",
-        "B. 100多个国家 / hơn 100 quốc gia",
-        "C. 120多个国家 / hơn 120 quốc gia",
-        "D. 150多个国家 / hơn 150 quốc gia"
+        "A. 90多个国家 / hon 90 quoc gia",
+        "B. 100多个国家 / hon 100 quoc gia",
+        "C. 120多个国家 / hon 120 quoc gia",
+        "D. 150多个国家 / hon 150 quoc gia"
       ],
-      "answer": "C. 120多个国家 / hơn 120 quốc gia"
+      "answer": "C. 120多个国家 / hon 120 quoc gia"
     },
     {
-      "question": "【快速阅读】参加此次对话会的政党和政治组织共有________个。\n/ Số lượng đảng phái và tổ chức chính trị tham gia đối thoại lần này là ________.",
+      "question": "【快速阅读】参加此次对话会的政党和政治组织共有________个。\n/ So luong dang phai va to chuc chinh tri tham gia la ________.",
       "options": [
-        "A. 100多个 / hơn 100",
-        "B. 150多个 / hơn 150",
-        "C. 200多个 / hơn 200",
-        "D. 250多个 / hơn 250"
+        "A. 100多个 / hon 100",
+        "B. 150多个 / hon 150",
+        "C. 200多个 / hon 200",
+        "D. 250多个 / hon 250"
       ],
-      "answer": "C. 200多个 / hơn 200"
+      "answer": "C. 200多个 / hon 200"
     },
     {
-      "question": "【快速阅读】文章认为，政党是各国内政外交________的力量。\n/ Bài viết cho rằng, các đảng phái là lực lượng ________ trong nội chính và đối ngoại của các nước.",
+      "question": "【快速阅读】文章认为，政党是各国内政外交________的力量。\n/ Bai viet cho rang, dang phai la luc luong ________ trong noi chinh va doi ngoai.",
       "options": [
-        "A. 举足轻重 / có vai trò quyết định",
-        "B. 微不足道 / nhỏ bé không đáng kể",
-        "C. 可有可无 / có cũng được không có cũng được",
-        "D. 独当一面 / độc lập gánh vác"
+        "A. 举足轻重 / co vai tro quyet dinh",
+        "B. 微不足道 / nho be khong dang ke",
+        "C. 可有可无 / co cung duoc khong co cung duoc",
+        "D. 独当一面 / doc lap ganh vac"
       ],
-      "answer": "A. 举足轻重 / có vai trò quyết định"
+      "answer": "A. 举足轻重 / co vai tro quyet dinh"
     },
     {
-      "question": "【延伸阅读】国际货币基金组织（IMF）传递全球经济增长放缓信息是在________。\n/ IMF truyền đi thông tin tăng trưởng kinh tế toàn cầu chậm lại vào ________.",
+      "question": "【延伸阅读】IMF传递全球经济增长放缓信息是在________。\n/ IMF truyen di thong tin tang truong kinh te toan cau cham lai vao ________.",
       "options": [
-        "A. 6月18日 / ngày 18 tháng 6",
-        "B. 6月28日 / ngày 28 tháng 6",
-        "C. 7月18日 / ngày 18 tháng 7",
-        "D. 7月28日 / ngày 28 tháng 7"
+        "A. 6月18日 / ngay 18/6",
+        "B. 6月28日 / ngay 28/6",
+        "C. 7月18日 / ngay 18/7",
+        "D. 7月28日 / ngay 28/7"
       ],
-      "answer": "B. 6月28日 / ngày 28 tháng 6"
+      "answer": "B. 6月28日 / ngay 28/6"
     },
     {
-      "question": "【延伸阅读】文章提到，意大利的债务占本国GDP的________。\n/ Bài viết đề cập, nợ của Italy chiếm ________ GDP của nước này.",
+      "question": "【延伸阅读】文章提到，意大利的债务占本国GDP的________。\n/ No cua Italy chiem ________ GDP cua nuoc nay.",
       "options": [
         "A. 100%",
         "B. 120%",
@@ -112,14 +112,14 @@
       "answer": "C. 132%"
     },
     {
-      "question": "【延伸阅读】文章认为，美联储加息对新兴市场国家的影响是________。\n/ Bài viết cho rằng, việc Fed tăng lãi suất ảnh hưởng đến các nước thị trường mới nổi như thế nào?",
+      "question": "【延伸阅读】美联储加息对新兴市场国家的主要影响是________。\n/ Viec Fed tang lai suat anh huong den cac nuoc thi truong moi noi nhu the nao?",
       "options": [
-        "A. 引发了新兴市场国家的债务和货币危机 / Kích hoạt khủng hoảng nợ và tiền tệ ở các nước thị trường mới nổi",
-        "B. 促进了新兴市场国家经济发展 / Thúc đẩy phát triển kinh tế các nước thị trường mới nổi",
-        "C. 对新兴市场国家没有影响 / Không ảnh hưởng đến các nước thị trường mới nổi",
-        "D. 改善了新兴市场国家的贸易条件 / Cải thiện điều kiện thương mại của các nước thị trường mới nổi"
+        "A. 引发了新兴市场国家的债务和货币危机 / Kich hoat khung hoang no va tien te o cac nuoc thi truong moi noi",
+        "B. 促进了新兴市场国家经济发展 / Thuc day phat trien kinh te",
+        "C. 对新兴市场国家没有影响 / Khong anh huong",
+        "D. 改善了新兴市场国家的贸易条件 / Cai thien dieu kien thuong mai"
       ],
-      "answer": "A. 引发了新兴市场国家的债务和货币危机 / Kích hoạt khủng hoảng nợ và tiền tệ ở các nước thị trường mới nổi"
+      "answer": "A. 引发了新兴市场国家的债务和货币危机 / Kich hoat khung hoang no va tien te o cac nuoc thi truong moi noi"
     }
   ]
 }
