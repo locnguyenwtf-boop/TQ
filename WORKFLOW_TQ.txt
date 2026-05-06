@@ -1,0 +1,264 @@
+========================================================================
+WORKFLOW DỰ ÁN TQ — ỨNG DỤNG ÔN THI BÁO CHÍ HÁN NGỮ
+Cập nhật: 2026-05-06
+========================================================================
+
+========================================================================
+PHẦN 1: TỔNG QUAN DỰ ÁN
+========================================================================
+
+TÊN DỰ ÁN: Ứng dụng ôn thi báo chí Hán ngữ (Flet web app)
+GITHUB:     https://github.com/locnguyenwtf-boop/TQ.git
+RAILWAY:    https://web-production-47a76.up.railway.app
+FILE CHẠY:  c:\vscode\code\TQ\quiz_app.py  (copy từ TN_MMT)
+PDF NGUỒN:  C:\Users\Admin\Downloads\824101224-汉语新闻报刊阅读教程.pdf
+            → 194 trang, scan (không có text layer), 12 đơn vị bài học
+
+CẤU TRÚC THƯ MỤC:
+  c:\vscode\code\TQ\
+  ├── quiz_app.py          ← GUI (copy từ TN_MMT, KHÔNG sửa nhiều)
+  ├── requirements.txt     ← flet==0.84.0, flet-web, pdfplumber
+  ├── Procfile             ← web: python quiz_app.py
+  ├── WORKFLOW_TQ.txt      ← FILE NÀY
+  ├── questions.txt        ← câu hỏi cũ (trắc nghiệm thông thường)
+  ├── questions_2.txt      ← câu hỏi cũ (trắc nghiệm thông thường)
+  └── baochi\              ← MÔN HỌC: Báo chí Hán ngữ
+      ├── don_vi_1.json    ← Đơn vị 1: 对话合作 (18 câu — ĐÃ HOÀN CHỈNH)
+      ├── don_vi_2.json    ← Đơn vị 2: 会议致辞 (11 câu — CẦN LÀM LẠI)
+      ├── don_vi_3.json    ← Đơn vị 3: 对外交往 (10 câu — CẦN LÀM LẠI)
+      ├── don_vi_4.json    ← Đơn vị 4: 世界组织 (11 câu — CẦN LÀM LẠI)
+      └── don_vi_5.json    ← Đơn vị 5: 国家关系 (10 câu — CẦN LÀM LẠI)
+
+========================================================================
+PHẦN 2: MỤC LỤC PDF (12 ĐƠN VỊ)
+========================================================================
+
+Trang PDF = Trang sách + 7 (vì có 7 trang bìa/mục lục đầu)
+
+ĐƠN VỊ | CHỦ ĐỀ          | TRANG SÁCH | TRANG PDF
+--------|-----------------|------------|----------
+  1     | 对话合作         | 1–12       | 8–19
+  2     | 会议致辞         | 14–25      | 21–32
+  3     | 对外交往         | 27–37      | 34–44
+  4     | 世界组织         | 39–52      | 46–59
+  5     | 国家关系         | 54–67      | 61–74
+  6     | 国际安全         | 69–79      | 76–86
+  7     | 社会治安         | 81–92      | 88–99
+  8     | 金融风险         | 94–106     | 101–113
+  9     | 军事动态         | 108–118    | 115–125
+  10    | 科技创新         | 120–131    | 127–138
+  11    | 环境保护         | 133–144    | 140–151
+  12    | 难民问题         | 146–157    | 153–164
+
+MỖI ĐƠN VỊ GỒM 3 BÀI ĐỌC:
+  - 新闻速递 (Tin tức nhanh)       ← bài dài nhất, nhiều thuật ngữ
+  - 快速阅读 (Đọc nhanh)           ← bài vừa
+  - 延伸阅读 (Đọc mở rộng)         ← bài vừa
+
+MỖI BÀI CÓ CÁC PHẦN PHỤ:
+  - 注释   (Chú thích — giải thích thuật ngữ, tổ chức)
+  - 生词   (Từ vựng mới)
+  - 词语例释 (Giải thích từ ngữ có ví dụ)
+  - 语言点与常用结构 (Điểm ngữ pháp và cấu trúc thường dùng)
+  - 练习   (Bài tập trong sách)
+
+========================================================================
+PHẦN 3: CÁCH TẠO CÂU HỎI (YÊU CẦU CHÍNH XÁC)
+========================================================================
+
+LOẠI CÂU HỎI: Điền vào chỗ trống (填空题) — trắc nghiệm 4 đáp án
+
+NGUỒN LẤY CÂU:
+  1. Từ bài đọc chính (新闻速递 / 快速阅读 / 延伸阅读):
+     → Lấy câu thật từ bài, xóa 1 từ/cụm từ quan trọng → điền vào chỗ trống
+     → Ví dụ: "政党，是各国内政外交________的力量。"
+     → Options: A.举足轻重  B.微不足道  C.可有可无  D.独当一面
+
+  2. Từ phần 注释 (Chú thích):
+     → Lấy câu định nghĩa trong chú thích, xóa từ khóa
+     → Ví dụ: "'金砖国家'一词，________年由吉姆·奥尼尔首次提出。"
+     → Options: A.1999  B.2001  C.2005  D.2008
+
+FORMAT CÂU HỎI BẮT BUỘC:
+  - Bắt đầu bằng tag nguồn: 【新闻速递】 hoặc 【快速阅读】
+    hoặc 【延伸阅读】 hoặc 【注释】
+  - Dòng 2: "原文填空：" (cho bài đọc) hoặc "注释填空：" (cho chú thích)
+  - Dòng 3: Câu thật từ bài, chỗ trống là ________
+  - 4 đáp án A/B/C/D song ngữ Trung–Việt (phiên âm latin nếu không có dấu)
+
+PHÂN BỐ CÂU HỎI MỖI ĐƠN VỊ (mục tiêu ~15–18 câu):
+  - 新闻速递: 6–7 câu
+  - 注释 của 新闻速递: 2–3 câu
+  - 快速阅读: 4–5 câu
+  - 注释 của 快速阅读: 1–2 câu
+  - 延伸阅读: 3–4 câu
+
+========================================================================
+PHẦN 4: ĐỊNH DẠNG FILE JSON
+========================================================================
+
+{
+  "section": "第X单元 主题名 / Don vi X: Ten chu de",
+  "questions": [
+    {
+      "question": "【新闻速递】原文填空：\n句子内容________句子继续。",
+      "options": [
+        "A. 选项A / tieng Viet",
+        "B. 选项B / tieng Viet",
+        "C. 选项C / tieng Viet",
+        "D. 选项D / tieng Viet"
+      ],
+      "answer": "A. 选项A / tieng Viet"
+    }
+  ]
+}
+
+QUY TẮC QUAN TRỌNG:
+  - KHÔNG dùng dấu " (ASCII double quote) bên trong chuỗi JSON
+    → Thay bằng dấu ' (single quote) hoặc 《》 hoặc bỏ dấu
+    → Ví dụ SAI:  "question": "奥尼尔说："金砖国家...""
+    → Ví dụ ĐÚNG: "question": "奥尼尔说:'金砖国家...'"
+  - Luôn dùng json.dump() với ensure_ascii=False để giữ ký tự Hán
+  - Luôn verify bằng json.load() sau khi tạo file
+
+CÁCH AN TOÀN NHẤT — Tạo file bằng Python script:
+  1. Viết data vào biến Python (dùng nháy đơn ' cho chuỗi)
+  2. Dùng json.dump() để ghi file
+  3. Verify lại bằng json.load()
+  Tuyệt đối KHÔNG dùng Write tool trực tiếp với nội dung JSON phức tạp
+
+========================================================================
+PHẦN 5: QUY TRÌNH XỬ LÝ PDF → JSON (CHO MỖI PHIÊN)
+========================================================================
+
+BƯỚC 1: Render trang PDF thành ảnh (nếu chưa có)
+  python -c "
+  import fitz
+  doc = fitz.open(r'C:\Users\Admin\Downloads\824101224-汉语新闻报刊阅读教程.pdf')
+  for i in range(START-1, END):
+      page = doc[i]
+      mat = fitz.Matrix(2.5, 2.5)
+      pix = page.get_pixmap(matrix=mat)
+      pix.save(fr'C:\Users\Admin\Downloads\pdf_p{i+1:03d}.png')
+  print('Done')
+  "
+  → File ảnh lưu tại: C:\Users\Admin\Downloads\pdf_p0XX.png
+
+CÁC FILE ẢNH ĐÃ RENDER (trang 8–67):
+  C:\Users\Admin\Downloads\pdf_p008.png → pdf_p067.png
+  (60 file, tương ứng đơn vị 1–5)
+
+BƯỚC 2: Đọc ảnh từng batch 5–8 trang
+  → Dùng Read tool để đọc file ảnh PNG
+  → Claude đọc trực tiếp bằng mắt (multimodal)
+
+BƯỚC 3: Trích xuất câu từ bài đọc
+  → Ghi chú các câu quan trọng từ:
+     - Bài đọc chính (tìm số liệu, tên riêng, định nghĩa, quan điểm)
+     - Phần 注释 (các chú thích giải thích tên tổ chức, khái niệm)
+
+BƯỚC 4: Tạo file JSON bằng Python script
+  → Viết script Python (tránh dùng dấu ")
+  → Chạy script → verify → xóa script
+
+BƯỚC 5: Push lên GitHub
+  cd c:\vscode\code\TQ
+  git add baochi/
+  git commit -m "add unit X: N questions"
+  git push
+  → Railway tự động redeploy sau ~2–3 phút
+
+========================================================================
+PHẦN 6: TRẠNG THÁI HIỆN TẠI (2026-05-06)
+========================================================================
+
+ĐÃ HOÀN THÀNH:
+  ✓ don_vi_1.json — 18 câu ĐÚNG FORMAT (cloze từ bài thật + 注释)
+  ✓ don_vi_2.json — 11 câu (câu hỏi tổng quát, CHƯA đúng format mới)
+  ✓ don_vi_3.json — 10 câu (câu hỏi tổng quát, CHƯA đúng format mới)
+  ✓ don_vi_4.json — 11 câu (câu hỏi tổng quát, CHƯA đúng format mới)
+  ✓ don_vi_5.json — 10 câu (câu hỏi tổng quát, CHƯA đúng format mới)
+  ✓ App hiển thị môn "Báo chí Hán ngữ" (tên tiếng Việt đã cấu hình)
+  ✓ Deploy lên Railway, link hoạt động
+
+CẦN LÀM TIẾP (ưu tiên):
+  □ Làm lại don_vi_2.json đúng format mới (lấy câu thật từ bài)
+    → Trang PDF: 21–32 (đơn vị 2: 会议致辞)
+    → Bài 新闻速递: p021–028 (演讲/致辞 về nhân quyền, đại sứ Pakistan, Merkel)
+    → Bài 快速阅读: p029 (đại sứ Pakistan)
+    → Bài 延伸阅读: p032–033 (Merkel: 时不我待)
+
+  □ Làm lại don_vi_3.json đúng format mới
+    → Trang PDF: 34–44 (đơn vị 3: 对外交往)
+    → Các bài về Trung Quốc đối ngoại, Nhật-Trung, cải cách 40 năm
+
+  □ Làm lại don_vi_4.json đúng format mới
+    → Trang PDF: 46–59 (đơn vị 4: 世界组织)
+    → Jerusalem/LHQ, Ban Ki-moon, Vành đai Con đường
+
+  □ Làm lại don_vi_5.json đúng format mới
+    → Trang PDF: 61–74 (đơn vị 5: 国家关系)
+    → Nga-Mỹ hậu sự thật, Triều Tiên-Hàn, bảo hộ thương mại
+
+  □ Tạo don_vi_6.json đến don_vi_12.json (đơn vị 6–12)
+    → Cần render thêm trang PDF: 76–164
+    → Mỗi đơn vị ~15–18 câu
+
+========================================================================
+PHẦN 7: NHẮN CLAUDE KHI BẮT ĐẦU PHIÊN MỚI
+========================================================================
+
+NHẮN NHƯ SAU:
+---
+Đọc file WORKFLOW_TQ.txt tại c:\vscode\code\TQ\WORKFLOW_TQ.txt
+
+Tôi muốn tiếp tục làm câu hỏi cho app báo chí Hán ngữ.
+Việc cần làm: làm lại don_vi_2.json theo đúng format mới
+(lấy câu thật từ bài, xóa từ khóa, tạo 4 đáp án song ngữ Trung–Việt).
+
+File ảnh đã render tại: C:\Users\Admin\Downloads\pdf_p021.png đến pdf_p032.png
+(nếu chưa có thì render trước theo hướng dẫn PHẦN 5 BƯỚC 1)
+
+Hãy:
+1. Đọc ảnh từng batch 5 trang
+2. Trích câu từ bài đọc + phần 注释
+3. Tạo file don_vi_2.json bằng Python script
+4. Verify JSON hợp lệ rồi push lên GitHub
+---
+
+LƯU Ý QUAN TRỌNG CHO CLAUDE:
+  - Ảnh PDF đã render: C:\Users\Admin\Downloads\pdf_p0XX.png (XX = số trang)
+  - Trang 8–67 đã render sẵn, chỉ cần đọc bằng Read tool
+  - Trang 68+ cần render thêm (dùng script Python trong BƯỚC 1)
+  - File JSON tạo bằng Python script (KHÔNG Write tool trực tiếp)
+  - Verify JSON sau mỗi file: python -c "import json; json.load(open('file.json', encoding='utf-8')); print('OK')"
+
+========================================================================
+PHẦN 8: LƯU Ý KỸ THUẬT
+========================================================================
+
+1. ENCODING:
+   - Luôn dùng encoding='utf-8' khi đọc/ghi file
+   - json.dump() với ensure_ascii=False để giữ ký tự Trung/Việt
+
+2. DẤU NGOẶC KÉP TRONG JSON:
+   - Lỗi phổ biến nhất: dùng " bên trong chuỗi JSON
+   - Thay bằng: ' (nháy đơn) hoặc 《》 hoặc 「」
+
+3. RAILWAY DEPLOY:
+   - Mỗi lần push GitHub → Railway tự redeploy
+   - Đợi ~2–3 phút để thấy thay đổi trên web
+   - Nếu app sleep (free tier) → mở link → đợi ~30 giây khởi động
+
+4. TÊN MÔN HIỂN THỊ:
+   - Folder "baochi" → hiển thị "Báo chí Hán ngữ"
+   - Đã cấu hình trong quiz_app.py dòng 336
+
+5. APP STRUCTURE:
+   - App đọc tất cả file .json trong subfolder baochi\
+   - Mỗi file = 1 bộ đề trong dropdown "Chọn bộ đề"
+   - section name trong JSON = tên hiển thị trong app
+
+========================================================================
+KẾT THÚC — WORKFLOW_TQ.txt
+========================================================================
