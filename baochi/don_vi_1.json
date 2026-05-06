@@ -1,0 +1,125 @@
+{
+  "section": "第一单元 对话合作 / Đơn vị 1: Hợp tác đối thoại",
+  "questions": [
+    {
+      "question": "【新闻速递】金砖国家第九次会晤在哪个城市举行？\n/ Hội nghị thượng đỉnh BRICS lần thứ 9 được tổ chức tại thành phố nào?",
+      "options": [
+        "A. 北京 / Bắc Kinh",
+        "B. 厦门 / Hạ Môn",
+        "C. 上海 / Thượng Hải",
+        "D. 广州 / Quảng Châu"
+      ],
+      "answer": "B. 厦门 / Hạ Môn"
+    },
+    {
+      "question": "【新闻速递】本次金砖峰会的主题是________。\n/ Chủ đề của Hội nghị thượng đỉnh BRICS lần này là ________.",
+      "options": [
+        "A. 深化金砖伙伴关系，开辟更加光明未来 / Tăng cường quan hệ đối tác BRICS, mở ra tương lai tươi sáng hơn",
+        "B. 共建繁荣世界，开创美好未来 / Cùng xây dựng thế giới thịnh vượng, tạo ra tương lai tươi đẹp",
+        "C. 推动全球治理，维护世界和平 / Thúc đẩy quản trị toàn cầu, duy trì hòa bình thế giới",
+        "D. 加强南南合作，促进共同发展 / Tăng cường hợp tác Nam-Nam, thúc đẩy phát triển chung"
+      ],
+      "answer": "A. 深化金砖伙伴关系，开辟更加光明未来 / Tăng cường quan hệ đối tác BRICS, mở ra tương lai tươi sáng hơn"
+    },
+    {
+      "question": "【新闻速递】奥尼尔预测，金砖国家经济规模将在________年前超过G7。\n/ O'Neill dự đoán quy mô kinh tế các nước BRICS sẽ vượt G7 trước năm ________.",
+      "options": [
+        "A. 2025",
+        "B. 2030",
+        "C. 2035",
+        "D. 2040"
+      ],
+      "answer": "C. 2035"
+    },
+    {
+      "question": "【新闻速递】金砖国家占全球总GDP的________。\n/ Các nước BRICS chiếm ________ tổng GDP toàn cầu.",
+      "options": [
+        "A. 20%",
+        "B. 25%",
+        "C. 30%",
+        "D. 35%"
+      ],
+      "answer": "C. 30%"
+    },
+    {
+      "question": "【新闻速递】南南合作产生于________年代末期。\n/ Hợp tác Nam-Nam ra đời vào cuối thập niên ________.",
+      "options": [
+        "A. 20世纪50年代 / thập niên 50 thế kỷ 20",
+        "B. 20世纪60年代 / thập niên 60 thế kỷ 20",
+        "C. 20世纪70年代 / thập niên 70 thế kỷ 20",
+        "D. 20世纪80年代 / thập niên 80 thế kỷ 20"
+      ],
+      "answer": "B. 20世纪60年代 / thập niên 60 thế kỷ 20"
+    },
+    {
+      "question": "【新闻速递】"金砖＋"合作模式的目的是________。\n/ Mục đích của mô hình hợp tác "BRICS+" là ________.",
+      "options": [
+        "A. 取代G7的地位 / Thay thế vị thế G7",
+        "B. 构建更广泛的伙伴关系 / Xây dựng quan hệ đối tác rộng rãi hơn",
+        "C. 建立新的金融体系 / Xây dựng hệ thống tài chính mới",
+        "D. 对抗西方国家 / Đối kháng với các nước phương Tây"
+      ],
+      "answer": "B. 构建更广泛的伙伴关系 / Xây dựng quan hệ đối tác rộng rãi hơn"
+    },
+    {
+      "question": "【快速阅读】政党与世界政党高层对话会来自多少个国家的政党代表参加？\n/ Đối thoại cấp cao giữa các đảng phái trên thế giới có đại diện từ bao nhiêu quốc gia tham gia?",
+      "options": [
+        "A. 90多个国家 / hơn 90 quốc gia",
+        "B. 100多个国家 / hơn 100 quốc gia",
+        "C. 120多个国家 / hơn 120 quốc gia",
+        "D. 150多个国家 / hơn 150 quốc gia"
+      ],
+      "answer": "C. 120多个国家 / hơn 120 quốc gia"
+    },
+    {
+      "question": "【快速阅读】参加此次对话会的政党和政治组织共有________个。\n/ Số lượng đảng phái và tổ chức chính trị tham gia đối thoại lần này là ________.",
+      "options": [
+        "A. 100多个 / hơn 100",
+        "B. 150多个 / hơn 150",
+        "C. 200多个 / hơn 200",
+        "D. 250多个 / hơn 250"
+      ],
+      "answer": "C. 200多个 / hơn 200"
+    },
+    {
+      "question": "【快速阅读】文章认为，政党是各国内政外交________的力量。\n/ Bài viết cho rằng, các đảng phái là lực lượng ________ trong nội chính và đối ngoại của các nước.",
+      "options": [
+        "A. 举足轻重 / có vai trò quyết định",
+        "B. 微不足道 / nhỏ bé không đáng kể",
+        "C. 可有可无 / có cũng được không có cũng được",
+        "D. 独当一面 / độc lập gánh vác"
+      ],
+      "answer": "A. 举足轻重 / có vai trò quyết định"
+    },
+    {
+      "question": "【延伸阅读】国际货币基金组织（IMF）传递全球经济增长放缓信息是在________。\n/ IMF truyền đi thông tin tăng trưởng kinh tế toàn cầu chậm lại vào ________.",
+      "options": [
+        "A. 6月18日 / ngày 18 tháng 6",
+        "B. 6月28日 / ngày 28 tháng 6",
+        "C. 7月18日 / ngày 18 tháng 7",
+        "D. 7月28日 / ngày 28 tháng 7"
+      ],
+      "answer": "B. 6月28日 / ngày 28 tháng 6"
+    },
+    {
+      "question": "【延伸阅读】文章提到，意大利的债务占本国GDP的________。\n/ Bài viết đề cập, nợ của Italy chiếm ________ GDP của nước này.",
+      "options": [
+        "A. 100%",
+        "B. 120%",
+        "C. 132%",
+        "D. 150%"
+      ],
+      "answer": "C. 132%"
+    },
+    {
+      "question": "【延伸阅读】文章认为，美联储加息对新兴市场国家的影响是________。\n/ Bài viết cho rằng, việc Fed tăng lãi suất ảnh hưởng đến các nước thị trường mới nổi như thế nào?",
+      "options": [
+        "A. 引发了新兴市场国家的债务和货币危机 / Kích hoạt khủng hoảng nợ và tiền tệ ở các nước thị trường mới nổi",
+        "B. 促进了新兴市场国家经济发展 / Thúc đẩy phát triển kinh tế các nước thị trường mới nổi",
+        "C. 对新兴市场国家没有影响 / Không ảnh hưởng đến các nước thị trường mới nổi",
+        "D. 改善了新兴市场国家的贸易条件 / Cải thiện điều kiện thương mại của các nước thị trường mới nổi"
+      ],
+      "answer": "A. 引发了新兴市场国家的债务和货币危机 / Kích hoạt khủng hoảng nợ và tiền tệ ở các nước thị trường mới nổi"
+    }
+  ]
+}

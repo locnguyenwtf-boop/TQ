@@ -1,0 +1,115 @@
+{
+  "section": "第二单元 会议致辞 / Đơn vị 2: Diễn văn hội nghị",
+  "questions": [
+    {
+      "question": "【新闻速递】致辞出自首届哪个论坛的开幕式？\n/ Bài phát biểu được đọc tại lễ khai mạc diễn đàn nào?",
+      "options": [
+        "A. 首届"亚洲人权论坛" / Diễn đàn Nhân quyền châu Á lần đầu tiên",
+        "B. 首届"南南人权论坛" / Diễn đàn Nhân quyền Nam-Nam lần đầu tiên",
+        "C. 首届"全球人权对话论坛" / Diễn đàn Đối thoại Nhân quyền Toàn cầu lần đầu tiên",
+        "D. 首届"亚非人权合作论坛" / Diễn đàn Hợp tác Nhân quyền Á-Phi lần đầu tiên"
+      ],
+      "answer": "B. 首届"南南人权论坛" / Diễn đàn Nhân quyền Nam-Nam lần đầu tiên"
+    },
+    {
+      "question": "【新闻速递】致辞中提到，中国减少了________亿多贫困人口。\n/ Bài phát biểu đề cập, Trung Quốc đã giảm hơn ________ tỷ người nghèo.",
+      "options": [
+        "A. 5亿 / 5 tỷ",
+        "B. 6亿 / 6 tỷ",
+        "C. 7亿 / 7 tỷ",
+        "D. 8亿 / 8 tỷ"
+      ],
+      "answer": "C. 7亿 / 7 tỷ"
+    },
+    {
+      "question": "【新闻速递】致辞中提到，中国有________亿人脱贫。\n/ Bài phát biểu đề cập, Trung Quốc có ________ tỷ người thoát nghèo.",
+      "options": [
+        "A. 6.6亿 / 6,6 tỷ",
+        "B. 7亿 / 7 tỷ",
+        "C. 7.7亿 / 7,7 tỷ",
+        "D. 8亿 / 8 tỷ"
+      ],
+      "answer": "C. 7.7亿 / 7,7 tỷ"
+    },
+    {
+      "question": "【新闻速递】致辞认为，人权保障________。\n/ Bài phát biểu cho rằng, bảo đảm nhân quyền ________.",
+      "options": [
+        "A. 只有一种途径 / chỉ có một con đường",
+        "B. 并不只有一种途径，各国可以根据国情选择合适方式 / không chỉ một con đường, mỗi nước có thể lựa chọn phù hợp",
+        "C. 必须依靠国际社会共同监督 / phải dựa vào sự giám sát chung của cộng đồng quốc tế",
+        "D. 以西方标准为唯一准则 / lấy tiêu chuẩn phương Tây làm chuẩn mực duy nhất"
+      ],
+      "answer": "B. 并不只有一种途径，各国可以根据国情选择合适方式 / không chỉ một con đường, mỗi nước có thể lựa chọn phù hợp"
+    },
+    {
+      "question": "【新闻速递】致辞认为，人权的核心要义在于________。\n/ Bài phát biểu cho rằng, ý nghĩa cốt lõi của nhân quyền là ________.",
+      "options": [
+        "A. 促进人的全面发展，根本手段在于平等合作 / thúc đẩy sự phát triển toàn diện của con người, biện pháp căn bản là hợp tác bình đẳng",
+        "B. 保护个人自由，限制政府权力 / bảo vệ tự do cá nhân, hạn chế quyền lực chính phủ",
+        "C. 推广西方民主制度 / phổ biến chế độ dân chủ phương Tây",
+        "D. 建立统一的国际人权标准 / xây dựng tiêu chuẩn nhân quyền quốc tế thống nhất"
+      ],
+      "answer": "A. 促进人的全面发展，根本手段在于平等合作 / thúc đẩy sự phát triển toàn diện của con người, biện pháp căn bản là hợp tác bình đẳng"
+    },
+    {
+      "question": "【快速阅读】2016年是中巴建交________周年。\n/ Năm 2016 là kỷ niệm ________ năm thiết lập quan hệ ngoại giao Trung Quốc - Pakistan.",
+      "options": [
+        "A. 55周年 / 55 năm",
+        "B. 60周年 / 60 năm",
+        "C. 65周年 / 65 năm",
+        "D. 70周年 / 70 năm"
+      ],
+      "answer": "C. 65周年 / 65 năm"
+    },
+    {
+      "question": "【快速阅读】致辞提到，中国经济对全球经济增长的贡献率超过________。\n/ Bài phát biểu đề cập, đóng góp của kinh tế Trung Quốc vào tăng trưởng kinh tế toàn cầu vượt ________.",
+      "options": [
+        "A. 20%",
+        "B. 25%",
+        "C. 30%",
+        "D. 35%"
+      ],
+      "answer": "C. 30%"
+    },
+    {
+      "question": "【快速阅读】致辞提到，中巴经济走廊（CPEC）项目于________年4月20日启动。\n/ Bài phát biểu đề cập, dự án Hành lang Kinh tế Trung Quốc - Pakistan (CPEC) khởi động ngày 20/4/________.",
+      "options": [
+        "A. 2013年 / năm 2013",
+        "B. 2014年 / năm 2014",
+        "C. 2015年 / năm 2015",
+        "D. 2016年 / năm 2016"
+      ],
+      "answer": "C. 2015年 / năm 2015"
+    },
+    {
+      "question": "【延伸阅读】默克尔新年致辞的主题是________。\n/ Chủ đề bài phát biểu năm mới của Merkel là ________.",
+      "options": [
+        "A. 共创美好未来 / Cùng tạo tương lai tươi đẹp",
+        "B. 时不我待 / Thời không đợi ta",
+        "C. 团结一致，共渡难关 / Đoàn kết, vượt qua khó khăn",
+        "D. 数字化是德国的未来 / Số hóa là tương lai của Đức"
+      ],
+      "answer": "B. 时不我待 / Thời không đợi ta"
+    },
+    {
+      "question": "【延伸阅读】默克尔认为，德国的未来与欧洲的未来________。\n/ Merkel cho rằng tương lai của Đức và tương lai của châu Âu ________.",
+      "options": [
+        "A. 相互独立，各自发展 / độc lập với nhau, phát triển riêng",
+        "B. 息息相关，密不可分 / liên quan mật thiết, không thể tách rời",
+        "C. 互相竞争，此消彼长 / cạnh tranh lẫn nhau",
+        "D. 完全不同，走向分裂 / hoàn toàn khác nhau, hướng đến chia rẽ"
+      ],
+      "answer": "B. 息息相关，密不可分 / liên quan mật thiết, không thể tách rời"
+    },
+    {
+      "question": "【延伸阅读】默克尔在新年致辞中对德国社会提出的主要挑战是________。\n/ Thách thức chính Merkel đề cập cho xã hội Đức trong bài phát biểu năm mới là ________.",
+      "options": [
+        "A. 气候变化 / biến đổi khí hậu",
+        "B. 难民安置问题 / vấn đề định cư người tị nạn",
+        "C. 数字化转型 / chuyển đổi số",
+        "D. 经济不平等 / bất bình đẳng kinh tế"
+      ],
+      "answer": "C. 数字化转型 / chuyển đổi số"
+    }
+  ]
+}
